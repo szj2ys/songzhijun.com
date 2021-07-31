@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Butterfly
-subtitle: A Simple and Card UI Design theme for Hexo
-description: A Simple and Card UI Design theme for Hexo
-keywords: hexo,butterfly,jerryc,demo,hexo-butterfly,hexo-theme-butterfly
-author: Jerry
-language: zh-TW
+title: 随时归零
+subtitle: Never settle!
+description: 从来没有真正的绝境，只有心灵的迷途
+keywords: hexo,butterfly,demo,hexo-butterfly,hexo-theme-butterfly
+author: 宋志军
+language: zh-CN
 timezone: Asia/Hong_Kong
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://butterfly.js.org
+url: https://www.songzhijun.com
 root: /
 # permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink/
@@ -123,7 +123,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:jerryc127/butterfly-demo.git
+  repo: https://github.com/szj2ys/szj2ys.github.io.git
   branch: master
   # other deployer
 

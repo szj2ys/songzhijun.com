@@ -27,30 +27,30 @@
 
 menu:
   首頁: / || fas fa-home
-  目錄||fas fa-compass:
-    歸檔: /archives/ || fas fa-archive
-    標籤: /tags/ || fas fa-tags
-    分類: /categories/ || fas fa-folder-open
-  文檔||fas fa-book:
-    🚀 快速開始: /posts/21cfbf15/
-    📑 主題頁面: /posts/dc584b87/
-    🛠 主題配置-1: /posts/4aa8abbe/
-    ⚔️ 主題配置-2: /posts/ceeb73f/
-    ❓ 主題問答: /posts/98d20436/
-    ⚡️ 進階教程: /posts/4073eda/
-    ✨ 更新日誌: /posts/198a4240/
-  娛樂||fa fa-heartbeat:
-    # - 音樂 || /music/ || fas fa-music
-    圖庫: /Gallery/ || fas fa-images
-    電影: /movies/ || fas fa-video
-    自言自語: /talking/ || fas fa-cubes
+  目录||fas fa-compass:
+    归档: /archives/ || fas fa-archive
+    标签: /tags/ || fas fa-tags
+    分类: /categories/ || fas fa-folder-open
+  文档||fas fa-book:
+    🚀 快速开始: /posts/21cfbf15/
+    📑 主题页面: /posts/dc584b87/
+    🛠 主题配置-1: /posts/4aa8abbe/
+    ⚔️ 主题配置-2: /posts/ceeb73f/
+    ❓ 主题问答: /posts/98d20436/
+    ⚡️ 进阶教程: /posts/4073eda/
+    ✨ 更新日志: /posts/198a4240/
+  娱乐||fa fa-heartbeat:
+    # - 音乐 || /music/ || fas fa-music
+    图库: /Gallery/ || fas fa-images
+    电影: /movies/ || fas fa-video
+    自言自语: /talking/ || fas fa-cubes
   留言板: /messageboard/ || fas fa-comment-dots
   示例: /link/ || fas fa-thumbs-up
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
 
-# Code Blocks (代碼相關)
+# Code Blocks (代码相关)
 # --------------------------------------
 
 highlight_theme: light # darker / pale night / light / ocean / mac / mac light /false
@@ -68,7 +68,7 @@ copy:
     enable: true
     limit_count: 150
 
-# social settings (社交圖標設置)
+# social settings (社交图标设置)
 # formal:
 #   icon: link || the description
 social:
@@ -88,7 +88,7 @@ algolia_search:
 local_search:
   enable: true
 
-# Math (數學)
+# Math (数学)
 # --------------------------------------
 # About the per_page
 # if you set it to true, it will load mathjax/katex script in each page (true 表示每一頁都加載js)
@@ -228,23 +228,22 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    - img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/wechat.jpg
+    - img: /img/reward/wechat.png
       link:
       text: 微信
-    - img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/alipay.jpg
+    - img: /img/reward/alipay.jpg
       link:
-      text: 支付寶
-    - img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/alipayhk.jpg
-      link:
-      text: 支付寶香港
+      text: 支付宝
+#    - img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/Photo/alipayhk.jpg
+
 
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: true
+  enable: false
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
+#  url: https://github.com/szj2ys/szj2ys.github.io/edit/master/source/
 
 # Related Articles
 related_post:
@@ -690,12 +689,12 @@ aside:
   position: right # left or right
   card_author:
     enable: true
-    description:
+    description: Hello!
     button:
       enable: true
       icon: fab fa-github
-      text: 主題 GitHub
-      link: https://github.com/jerryc127/hexo-theme-butterfly
+      text: GitHub
+      link: https://github.com/szj2ys
   card_announcement:
     enable: true
     content:
@@ -763,9 +762,9 @@ change_font_size: true
 translate:
   enable: true
   # The text of a button
-  default: 簡
+  default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
-  defaultEncoding: 1
+  defaultEncoding: 2
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese
