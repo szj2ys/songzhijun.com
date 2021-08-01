@@ -1,14 +1,14 @@
 ---
-title: Butterfly 安裝文檔(五) 主題問答
+title: Butterfly 安裝文檔(五) 主题問答
 date: 2020-05-28 22:38:21
 tags:
   - 教程
   - Hexo
-  - 主題
+  - 主题
   - butterfly
-categories: Docs文檔
-keywords: 'hexo,butterfly,主題,doc,教程,文檔'
-description: Butterfly安裝文檔-主題問答
+categories: Butterfly文档
+keywords: 'hexo,butterfly,主题,doc,教程,文檔'
+description: Butterfly安裝文檔-主题問答
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-doc-05-cover.png
 abbrlink: 98d20436
 comments: false
@@ -26,7 +26,7 @@ comments: false
 
  📚  文檔目錄
 
-{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主題頁面 ' 📑 主題頁面' %} - {% post_link Butterfly-安裝文檔-三-主題配置-1 ' 🛠 主題配置-1' %} - {% post_link Butterfly-安裝文檔-四-主題配置-2 ' ⚔️ 主題配置-2' %} - {% post_link Butterfly-安裝文檔-五-主題問答 ' ❓ 主題問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
+{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主题頁面 ' 📑 主题頁面' %} - {% post_link Butterfly-安裝文檔-三-主题配置-1 ' 🛠 主题配置-1' %} - {% post_link Butterfly-安裝文檔-四-主题配置-2 ' ⚔️ 主题配置-2' %} - {% post_link Butterfly-安裝文檔-五-主题問答 ' ❓ 主题問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
 
 {% endnote %}
 
@@ -112,7 +112,7 @@ TypeError: Cannot read property &#39;enable&#39; of undefined
     at processImmediate (internal/timers.js:439:21)
 ```
 
-> 請參照最新版的_config.yml, 比對後，把缺的配置複製到主題配置文件中去
+> 請參照最新版的_config.yml, 比對後，把缺的配置複製到主题配置文件中去
 
 ###  wordcount is not a function / totalcount is not a function
 
@@ -238,5 +238,5 @@ Cannot read property 'appId' of undefined
 
 ### 點擊中文目錄報錯的問題
 
-這種情況出現在主題為 `3.0.0`以下版本，升級主題就行
+這種情況出現在主题為 `3.0.0`以下版本，升級主题就行
 

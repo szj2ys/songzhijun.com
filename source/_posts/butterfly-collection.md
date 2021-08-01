@@ -1,14 +1,14 @@
 ---
-title: Butterfly 美化/優化/魔改 教程合集
+title: Butterfly 美化/优化/魔改 教程合集
 tags:
   - Butterfly
   - 美化
-  - 優化
+  - 优化
   - 魔改
 categories:
-  - 合集
-keywords: 'hexo,butterfly,主題,doc,教程,文件'
-description: Butterfly 美化/優化/魔改 合集
+  - Butterfly教程
+keywords: 'hexo,butterfly,主题,doc,教程,文件'
+description: Butterfly 美化/优化/魔改 合集
 cover: 'https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-diy-cover.png'
 abbrlink: 7670b080
 date: 2021-01-02 18:11:22
@@ -24,7 +24,7 @@ comments: false
 {% note green 'fab fa-octopus-deploy' flat %}
 如果你想加入自己的文章到表格，你可以
 
-1. 確保你的文章跟 Butterfly 主題有關
+1. 確保你的文章跟 Butterfly 主题有關
 2. 點擊這個[鏈接](https://github.com/jerryc127/butterfly.js.org/edit/main/source/_posts/butterfly-collection.md)
 3. 按要求新增 作者 + 文章連結 `| Jerry | [教程a](https://butterfly.js.org)`
 4. 點擊下面的 `Commit changes` ，合併到 butterfly.js.org 倉庫

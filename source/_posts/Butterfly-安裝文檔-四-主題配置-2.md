@@ -1,13 +1,13 @@
 ---
-title: Butterfly 安裝文檔(四) 主題配置-2
+title: Butterfly 安裝文檔(四) 主题配置-2
 tags:
   - 教程
   - Hexo
-  - 主題
+  - 主题
   - butterfly
-categories: Docs文檔
-keywords: 'hexo,butterfly,主題,doc,教程,文檔'
-description: Butterfly安裝文檔-主題配置-2
+categories: Butterfly文档
+keywords: 'hexo,butterfly,主题,doc,教程,文檔'
+description: Butterfly安裝文檔-主题配置-2
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-docs-04-cover.png
 abbrlink: ceeb73f
 date: 2020-05-28 22:38:11
@@ -26,7 +26,7 @@ comments: false
 
  📚  文檔目錄
 
-{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主題頁面 ' 📑 主題頁面' %} - {% post_link Butterfly-安裝文檔-三-主題配置-1 ' 🛠 主題配置-1' %} - {% post_link Butterfly-安裝文檔-四-主題配置-2 ' ⚔️ 主題配置-2' %} - {% post_link Butterfly-安裝文檔-五-主題問答 ' ❓ 主題問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
+{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主题頁面 ' 📑 主题頁面' %} - {% post_link Butterfly-安裝文檔-三-主题配置-1 ' 🛠 主题配置-1' %} - {% post_link Butterfly-安裝文檔-四-主题配置-2 ' ⚔️ 主题配置-2' %} - {% post_link Butterfly-安裝文檔-五-主题問答 ' ❓ 主题問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
 
 {% endnote %}
 
@@ -92,7 +92,7 @@ comments:
 
 註冊 [disqus](https://disqus.com/)，配置你自己的 disqus，然後在`Butterfly`裏開啟它。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 disqus:
@@ -107,7 +107,7 @@ disqus:
 
 與Disqus一樣，但由於Disqus在中國大陸無法訪問， 使用Disqusjs可以在無法訪問Disqus時顯示評論。具體可參考[Disqusjs](https://github.com/SukkaW/DisqusJS)。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```markdown
 disqusjs:
@@ -130,7 +130,7 @@ disqusjs:
 
 註冊[來必力](https://livere.com/)，配置你自己的來必力設置，然後在`Butterfly`裏開啟它。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 livere:
@@ -149,7 +149,7 @@ laibili 的 uid 你能在這裏找到:
 
 遵循 [gitalk](https://github.com/gitalk/gitalk)的指示去獲取你的 github Oauth 應用的 client id 和 secret 值。以及查看它的相關配置説明。
 
-然後修改 `主題配置文件`:
+然後修改 `主题配置文件`:
 
 ```yaml
 gitalk:
@@ -174,7 +174,7 @@ gitalk:
 
 遵循 [Valine](https://github.com/xCss/Valine)的指示去配置你的 LeanCloud 應用。以及查看相應的配置説明。
 
-然後修改 `主題配置文件`:
+然後修改 `主题配置文件`:
 
 ```yaml
 valine:
@@ -254,7 +254,7 @@ Waline - 一款從 Valine 衍生的帶後端評論系統。可以將 Waline 等�
 
 具體配置可參考 [waline 文檔](https://waline.js.org/)
 
-然後修改 `主題配置文件`:
+然後修改 `主题配置文件`:
 
 ```yaml
 # waline - A simple comment system with backend support fork from Valine
@@ -319,7 +319,7 @@ waline:
 
 與Gitalk一樣，基於 GitHub issues 的評論工具。相對於Gitalk,其相對需要權限較少。具體配置可參考[Utterances](https://utteranc.es/)。
 
-修改 `主題配置文件`:
+修改 `主题配置文件`:
 
 ```markdown
 utterances:
@@ -339,7 +339,7 @@ utterances:
 
 `Facebook Comments`是Facebook提供的評論插件，需要登陸Facebook才可評論。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```markdown
 # Facebook Comments Plugin
@@ -364,7 +364,7 @@ facebook_comments:
 
 你只需要把獲取到的 `環境ID (envId)` 填寫到配置上去就行
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 twikoo:
@@ -395,16 +395,16 @@ twikoo:
 
 ## 在綫聊天
 
-從3.0開始，Butterfly主題內置了多種在綫聊天工具。你可以選擇開啟一種，方便你與訪客的交流。
+從3.0開始，Butterfly主题內置了多種在綫聊天工具。你可以選擇開啟一種，方便你與訪客的交流。
 
 {% tabs online-chat %}
 
 <!-- tab 通用設置 -->
 這些工具都提供了一個按鈕可以打開/關閉聊天窗口。
-主題也提供了一個集合主題特色的按鈕來替換這些工具本身的按鈕，這個聊天按鈕將會出現在右下角裏。
+主题也提供了一個集合主题特色的按鈕來替換這些工具本身的按鈕，這個聊天按鈕將會出現在右下角裏。
 你只需要把`chat_btn`打開就行。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # Chat Button [recommend]
@@ -414,10 +414,10 @@ chat_btn: true
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-button.png)
 
-為了不影響訪客的體驗，主題提供一個`chat_hide_show`配置
+為了不影響訪客的體驗，主题提供一個`chat_hide_show`配置
 設為`true`後，使用工具提供的按鈕時，只有向上滾動才會顯示聊天按鈕，向下滾動時會隱藏按鈕。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
@@ -437,7 +437,7 @@ chat_hide_show: true
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-chatra-id.png)
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # chatra
@@ -465,7 +465,7 @@ chatra:
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-tidio-id.png)
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # tidio
@@ -490,7 +490,7 @@ tidio:
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-daovoice-appid.png)
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # daovoice
@@ -516,7 +516,7 @@ daovoice:
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-chat-gitter-setting.png)
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # gitter
@@ -568,7 +568,7 @@ crisp:
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-addthis.jpg)
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 addThis:
@@ -581,7 +581,7 @@ addThis:
 <!-- tab Sharejs -->
 如果你不知道 [sharejs](https://github.com/overtrue/share.js/)，看看它的説明。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 sharejs:
@@ -615,7 +615,7 @@ addtoany:
 
 1. 你需要安裝 [hexo-algolia](https://github.com/oncletom/hexo-algolia)或 [hexo-algoliasearch](https://github.com/LouisBarranqueiro/hexo-algoliasearch). 根據它們的説明文檔去做相應的配置。
 
-2. 修改 `主題配置文件`
+2. 修改 `主题配置文件`
 
 ```yaml
 algolia_search:
@@ -632,7 +632,7 @@ algolia_search:
 
 1. 你需要安裝 [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search). 根據它的文檔去做相應配置。**注意格式只支持 xml**。
 
-2. 修改 `主題配置文件`
+2. 修改 `主题配置文件`
 
 ```yaml
 local_search:
@@ -647,7 +647,7 @@ local_search:
 如果需要搜索引擎收錄網站，可能需要登錄對應搜索引擎的管理平台進行提交。
 各自的驗證碼可從各自管理平台拿到
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 site_verification:
@@ -667,7 +667,7 @@ site_verification:
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-baidu-tongji.jpg)
 
-3. 修改 `主題配置文件`
+3. 修改 `主题配置文件`
 
 ```yaml
 baidu_analytics: 你的代碼
@@ -682,7 +682,7 @@ baidu_analytics: 你的代碼
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-google-analytics.jpg)
 
-3. 修改 `主題配置文件`
+3. 修改 `主题配置文件`
 
 ```yaml
 google_analytics: 你的代碼 # 通常以`UA-`打頭
@@ -700,7 +700,7 @@ google_analytics: 你的代碼 # 通常以`UA-`打頭
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-tencent-analysic.png)
 
-4. 修改 `主題配置文件`
+4. 修改 `主题配置文件`
 
 ```yaml
 # Tencent_analytics ID
@@ -717,7 +717,7 @@ tencent_analytics:
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-CNZZ-analysic.png)
 
-4. 修改 `主題配置文件`
+4. 修改 `主题配置文件`
 
 ```yaml
 cnzz_analytics: 
@@ -733,7 +733,7 @@ cnzz_analytics:
 
 ![image-20201230195158742](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-cloudflare-analytics-id.png)
 
-4. 修改 `主題配置文件`
+4. 修改 `主题配置文件`
 
    ```yaml
    # Cloudflare Analytics
@@ -751,7 +751,7 @@ cnzz_analytics:
 
 3. 找到你的 `ID`![image-20201230195541443](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-clarity-id.png)
 
-4. 修改 `主題配置文件`
+4. 修改 `主题配置文件`
 
    ```yaml
    # Microsoft Clarity
@@ -767,9 +767,9 @@ cnzz_analytics:
 
 {% tabs 廣告 %}
 <!-- tab 谷歌廣告 -->
-主題已集成谷歌廣告（自動廣告）
+主题已集成谷歌廣告（自動廣告）
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 google_adsense:
@@ -784,10 +784,10 @@ google_adsense:
 <!-- endtab -->
 
 <!-- tab 手動廣告配置 -->
-主題預留了三個位置可供插入廣告，分別為主頁文章(每三篇文章出現廣告)/aside公告之後/文章頁打賞之後。
+主题預留了三個位置可供插入廣告，分別為主頁文章(每三篇文章出現廣告)/aside公告之後/文章頁打賞之後。
 把html代碼填寫到對應的位置
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 ad:
@@ -814,7 +814,7 @@ ad:
 
 > 建議使用 KaTex 獲得更好的效果，下文有介紹！
 
-修改 `主題配置文件`:
+修改 `主题配置文件`:
 
 ```yaml
 mathjax:
@@ -840,7 +840,7 @@ mathjax:
 <!-- endtab -->
 
 <!-- tab KaTeX -->
-首先禁用`MathJax`（如果你配置過 MathJax 的話），然後修改你的`主題配置文件`以便加載`katex.min.css`:
+首先禁用`MathJax`（如果你配置過 MathJax 的話），然後修改你的`主题配置文件`以便加載`katex.min.css`:
 
 ```yaml
 katex:
@@ -924,7 +924,7 @@ markdown_it_plus:
 
 
 
-因為 KaTeX 更快更輕量，因此沒有 MathJax 的功能多（比如右鍵菜單）。為那些使用 MathJax 的用户，主題也內置了 katex 的 [複製](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) 功能。
+因為 KaTeX 更快更輕量，因此沒有 MathJax 的功能多（比如右鍵菜單）。為那些使用 MathJax 的用户，主题也內置了 katex 的 [複製](https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex) 功能。
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-doc-katex.gif)
 
@@ -933,11 +933,11 @@ markdown_it_plus:
 
 ## 美化/特效
 
-### 自定義主題色
+### 自定義主题色
 
 可以修改大部分UI顏色
 
-修改 `主題配置文件`，比如：
+修改 `主题配置文件`，比如：
 
 > 顏色值必須被雙引號包裹，就像`"#000"`而不是`#000`。否則將會在構建的時候報錯！
 
@@ -965,7 +965,7 @@ theme_color:
 
 默認顯示白色，可設置圖片或者顏色
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # 圖片格式 url(http://xxxxxx.com/xxx.jpg)
@@ -986,7 +986,7 @@ background:
 
 ### footer 背景
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # footer是否顯示圖片背景(與top_img一致)
@@ -1008,7 +1008,7 @@ footer_bg: true
 
 打字效果[activate-power-mode](https://github.com/disjukr/activate-power-mode)
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # Typewriter Effect (打字效果)
@@ -1026,7 +1026,7 @@ activate_power_mode:
 {% tabs 背景特效 %}
 <!-- tab 靜止綵帶 -->
 好看的綵帶背景，可設置每次刷新更換綵帶，或者每次點擊更換綵帶
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 canvas_ribbon:
@@ -1045,7 +1045,7 @@ canvas_ribbon:
 
 <!-- tab 動態綵帶 -->
 好看的綵帶背景，會飄動
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 canvas_fluttering_ribbon:
@@ -1057,7 +1057,7 @@ canvas_fluttering_ribbon:
 <!-- endtab -->
 
 <!-- tab canvas-nest -->
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 canvas_nest:
@@ -1082,7 +1082,7 @@ canvas_nest:
 `-1` 代表煙火效果在底部
 `9999` 代表煙火效果在前面
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 fireworks:
@@ -1095,7 +1095,7 @@ fireworks:
 <!-- endtab -->
 
 <!-- tab 愛心 @fas fa-heart -->
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # 點擊出現愛心
@@ -1108,7 +1108,7 @@ click_heart:
 <!-- endtab -->
 
 <!-- tab 文字 @fab fa-amilia -->
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # 點擊出現文字，文字可自行修改
@@ -1136,7 +1136,7 @@ ClickShowText:
 - `post` 只在文章頁生效
 - `site` 在全站生效
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # 美化頁面顯示
@@ -1165,7 +1165,7 @@ beautify:
 可自行設置字體的`font-family`
 **如不需要配置，請留空**
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # Global font settings
@@ -1181,7 +1181,7 @@ font:
 **如不需要配置，請留空。**
 **如不需要使用網絡字體，只需要把font_link留空就行**
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # Font settings for the site title and site subtitle
@@ -1195,7 +1195,7 @@ blog_title_font:
 
 可設置主頁中顯示的網站副標題或者喜歡的座右銘。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # 主頁subtitle
@@ -1301,7 +1301,7 @@ module.exports = {
 
 更多內容請查看 [hexo-offline](https://github.com/JLHwung/hexo-offline)的官方文檔
 
-4. 在`主題配置文件`中開啟 pwa 選項。
+4. 在`主题配置文件`中開啟 pwa 選項。
 
 ```yaml
 pwa:
@@ -1382,7 +1382,7 @@ pwa:
 
 2. `npm install hexo-wordcount --save` or `yarn add hexo-wordcount`
 
-3. 修改 `主題配置文件`:
+3. 修改 `主题配置文件`:
 
 ```yaml
 wordcount:
@@ -1407,7 +1407,7 @@ wordcount:
 
 {% tabs 圖片大圖查看模式 %}
 <!-- tab fancybox -->
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # fancybox http://fancyapps.com/fancybox/3/
@@ -1417,7 +1417,7 @@ fancybox: true
 ![fancybox.gif](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/fancybox.gif)
 <!-- endtab -->
 <!-- tab medium_zoom -->
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 medium_zoom: true
@@ -1431,7 +1431,7 @@ medium_zoom: true
 
 Snackbar 彈窗,根據自己愛好開啟
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # Snackbar 彈窗
@@ -1568,14 +1568,14 @@ inject:
 
 ## CDN
 
-配置文件中最後一部分CDN，裏面是主題所引用到的文件，可自行配置CDN。（非必要請勿修改，配置後請確認鏈接是否能訪問）
+配置文件中最後一部分CDN，裏面是主题所引用到的文件，可自行配置CDN。（非必要請勿修改，配置後請確認鏈接是否能訪問）
 
 以下是一些CDN提供商：
 
-- [jsdelivr](https://www.jsdelivr.com/)   👍主題使用
+- [jsdelivr](https://www.jsdelivr.com/)   👍主题使用
 - [bootcdn](https://www.bootcdn.cn/)
 - [cdnjs](https://cdnjs.com/)
 - ......
 
-{% btn '/posts/98d20436/',❓ Butterfly 安裝文檔(五) 主題問答,far fa-hand-point-right,block green right larger %}
+{% btn '/posts/98d20436/',❓ Butterfly 安裝文檔(五) 主题問答,far fa-hand-point-right,block green right larger %}
 

@@ -26,26 +26,18 @@
 #   About: /about/ || fas fa-heart
 
 menu:
-  首頁: / || fas fa-home
+  首页: / || fas fa-home
   目录||fas fa-compass:
     归档: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
-  文档||fas fa-book:
-    🚀 快速开始: /posts/21cfbf15/
-    📑 主题页面: /posts/dc584b87/
-    🛠 主题配置-1: /posts/4aa8abbe/
-    ⚔️ 主题配置-2: /posts/ceeb73f/
-    ❓ 主题问答: /posts/98d20436/
-    ⚡️ 进阶教程: /posts/4073eda/
-    ✨ 更新日志: /posts/198a4240/
   娱乐||fa fa-heartbeat:
     # - 音乐 || /music/ || fas fa-music
     图库: /Gallery/ || fas fa-images
     电影: /movies/ || fas fa-video
     自言自语: /talking/ || fas fa-cubes
   留言板: /messageboard/ || fas fa-comment-dots
-  示例: /link/ || fas fa-thumbs-up
+  链接: /link/ || fas fa-thumbs-up
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
@@ -97,22 +89,22 @@ local_search:
 
 # MathJax
 mathjax:
-  enable: false
-  per_page: false
+  enable: true
+  per_page: true
 
 # KaTeX
 katex:
-  enable: false
-  per_page: false
+  enable: true
+  per_page: true
   hide_scrollbar: true
 
 # Image (圖片設置)
 # --------------------------------------
 
-# Favicon（網站圖標）
+# Favicon（网站图标）
 favicon: /img/favicon.png
 
-# Avatar (頭像)
+# Avatar (头像)
 avatar:
   img: /img/avatar.png
   effect: false
@@ -182,13 +174,13 @@ error_404:
 post_meta:
   page: # Home Page
     date_type: created # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
-    date_format: relative # date/relative 顯示日期還是相對日期
+    date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 主頁是否顯示分類
-    tags: false # true or false 主頁是否顯示標籤
+    tags: true # true or false 主頁是否顯示標籤
     label: true # true or false 顯示描述性文字
   post:
     date_type: created # created or updated or both 文章頁日期是創建日或者更新日或都顯示
-    date_format: relative # date/relative 顯示日期還是相對日期
+    date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 文章頁是否顯示分類
     tags: true # true or false 文章頁是否顯示標籤
     label: true # true or false 顯示描述性文字
@@ -216,7 +208,7 @@ index_post_content:
 toc:
   enable: true
   number: true
-  style_simple: false
+  style_simple: true
 
 post_copyright:
   enable: true
@@ -271,8 +263,8 @@ noticeOutdate:
   style: flat # style: simple/flat
   limit_day: 365 # When will it be shown
   position: top # position: top/bottom
-  message_prev: 距離上次更新已經過了
-  message_next: 天，文章所描述的內容可能已經發生變化，請留意。
+  message_prev: 距离上次更新已经过了
+  message_next: 天，文章所描述的內容可能已经发生变化，请留意。
 
 # Share System (分享功能)
 # --------------------------------------
@@ -344,7 +336,7 @@ gitalk:
   admin:
   language: zh-CN # en, zh-CN, zh-TW, es-ES, fr, ru
   perPage: 10 # Pagination size, with maximum 100.
-  distractionFreeMode: false # Facebook-like distraction free mode.
+  distractionFreeMode: true # Facebook-like distraction free mode.
   pagerDirection: last # Comment sorting direction, available values are last and first.
   createIssueManually: false # Gitalk will create a corresponding github issue for your every single page automatically
   option:
@@ -357,7 +349,7 @@ valine:
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   lang: en # i18n: zh-CN/zh-TW/en/ja
-  placeholder: 1. 請確保你已經看了使用文檔和主題 Q&A\n2. 如果運行期間並無報錯，但是預覽時出現問題。請在瀏覽器打開該網頁的情況下，按 F12 進入開發人員工具，切換到 Console 界面。\n如有報錯，請試着解決。或者在提問題之前附上報錯截圖。\n3. 詳細描述遇到的問題，附上相關的報錯 / 截圖 / 網址 # valine comment input placeholder (like: Please leave your footprints)
+  placeholder: 1. 请确保你已经看了使用文档和主题 Q&A\n2. 如果运行期间并无报错，但是预览时出现问题。请在浏览器打开该网页的情況下，按 F12 进入开发人员工具，切换到 Console 界面。\n如有报错，请试着解決。或者在提问题之前附上报错截图。\n3. 详细描述遇到的问题，附上相关的报错 / 截图 / 网址 # valine comment input placeholder (like: Please leave your footprints)
   guest_info: nick,mail,link # valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
@@ -365,7 +357,7 @@ valine:
   emojiCDN: # emoji CDN
   enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields (nick/mail)
-  visitor: false
+  visitor: true
   option:
     path: '/messageboard/'
 
@@ -380,7 +372,7 @@ waline:
   option:
     placeholder: '請先查看文檔再詢問。主題如有報錯，請試着解決。提問題時請詳細描述遇到的問題，附上相關的報錯 / 截圖 / 網址。'
     pageSize: 8
-    lang: 'zh-TW'
+    lang: 'zh-CN'
     requiredFields: ['nick','mail']
 
 # utterances
@@ -456,7 +448,7 @@ crisp:
 footer:
   owner:
     enable: true
-    since: 2019
+    since: 2020
   custom_text:
   copyright: true # Copyright of theme and framework
 
@@ -490,19 +482,19 @@ microsoft_clarity:
 # Advertisement
 # --------------------------------------
 
-# Google Adsense (谷歌廣告)
+# Google Adsense (谷歌广告)
 google_adsense:
   enable: true
-  auto_ads: false
+  auto_ads: true
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
-  client: ca-pub-8919908724705274
+  client: ca-pub-1902923403139213
   enable_page_level_ads: true
 
 # Insert ads manually (手動插入廣告)
 ad:
-  index: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8919908724705274" data-ad-slot="1538867630"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
-  aside: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8919908724705274" data-ad-slot="8108145410" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
-  post: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-8919908724705274" data-ad-slot="5978969231"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+  index: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-1902923403139213" data-ad-slot="1538867630"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+  aside: <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1902923403139213" data-ad-slot="8108145410" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
+  post: <ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-1902923403139213" data-ad-slot="5978969231"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({})</script>
 
 # Verification (站長驗證)
 # --------------------------------------
@@ -544,7 +536,7 @@ index_site_info_top:
 index_top_img_height:
 
 # The user interface setting of category and tag page (category和tag頁的UI設置)
-# index - same as Homepage UI (index 值代表 UI將與首頁的UI一樣)
+# index - same as Homepage UI (index 值代表 UI將與首页的UI一樣)
 # default - same as archives UI 默認跟archives頁面UI一樣
 category_ui: index # 留空或 index
 tag_ui: index # 留空或 index
@@ -672,11 +664,11 @@ subtitle:
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
-    - 今日事&#44;今日畢
+    - 今日事&#44;今日毕
     - Never put off till tomorrow what you can do today
 
 # Loading Animation (加載動畫)
-preloader: false
+preloader: true
 
 # aside (側邊欄)
 # --------------------------------------
@@ -696,7 +688,7 @@ aside:
       text: GitHub
       link: https://github.com/szj2ys
   card_announcement:
-    enable: true
+    enable: false
     content:
       如果你在使用中遇到問題，請到 <a href="https://github.com/jerryc127/hexo-theme-butterfly/issues" style="color:#49b1f5">Github Issues</a> 或者 <a href="/messageboard/" style="color:#49b1f5">留言板</a> 進行反饋，你也可以加入 QQ 群（由於 QQ 群只能有500人，會定時清理潛水的人）<div class="social-button">
       <a class="button--animated" href="https://jq.qq.com/?_wv=1027&k=KU9105XR" target="_blank">QQ 1 群 👍</a>
@@ -742,7 +734,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 2019/11/13 00:00:00
+  publish_date: 2020/12/13 00:00:00
 
 # Aside widget - Newest Comments
 newest_comments:

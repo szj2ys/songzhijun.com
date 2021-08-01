@@ -5,11 +5,11 @@ date: 2020-07-31 19:02:28
 tags:
   - 教程
   - Hexo
-  - 主題
+  - 主题
   - butterfly
   - Aplayer
-categories: 進階教程
-keywords: 'hexo,butterfly,主題,doc,教程,文檔,Aplayer,Aplayer吸底,pjax'
+categories: Butterfly进阶教程
+keywords: 'hexo,butterfly,主题,doc,教程,文档,Aplayer,Aplayer吸底,pjax'
 description: Butterfly添加全局吸底Aplayer教程
 top_img:
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-add-aplayer-cover.png
@@ -19,7 +19,7 @@ comments: false
 {% note info %}
 
 以下文章只是教程
-如果遇到使用問題，请仔细查看插件文档，或者到插件那裏反饋
+如果遇到使用问题，请仔细查看插件文档，或者到插件那裏反饋
 
 {% endnote%}
 ## 前言
@@ -40,7 +40,7 @@ comments: false
 <div id="aplayer-uxAIfEUs" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="000PeZCQ1i4XVs" data-server="tencent" data-type="artist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#3F51B5"></div>
 ```
 
-如果我們不想使用插件，就需要在markdown中用html的格式書寫，同時把主題配置文件中的`aplayerInject`開啟
+如果我們不想使用插件，就需要在markdown中用html的格式書寫，同時把主题配置文件中的`aplayerInject`開啟
 
 ```markdown
 <div class="aplayer" data-id="000PeZCQ1i4XVs" data-server="tencent" data-type="artist" data-mutex="true" data-preload="auto" data-theme="#3F51B5"></div>
@@ -72,9 +72,9 @@ aplayer:
   asset_inject: false
 ```
 
-## 開啟主題的`aplayerInject`
+## 開啟主题的`aplayerInject`
 
-在主題的配置文件中，`enable`設為`true`和`per_page`設為`true`
+在主题的配置文件中，`enable`設為`true`和`per_page`設為`true`
 
 ```yaml
 # Inject the css and script (aplayer/meting)
@@ -85,7 +85,7 @@ aplayerInject:
 
 ## 插入Aplayer html
 
-為了適配hexo-tag-aplayer，主題內置的Meting js 仍為1.2版本，並非最新的2.x版本。
+為了適配hexo-tag-aplayer，主题內置的Meting js 仍為1.2版本，並非最新的2.x版本。
 
 Aplayer html 例子：
 
@@ -124,7 +124,7 @@ Aplayer html 例子：
 
 {% endnote %}
 
-把`aplayer代碼`插入到主題配置文件的`inject.bottom`去
+把`aplayer代碼`插入到主题配置文件的`inject.bottom`去
 
 ```yaml
 inject:
@@ -135,7 +135,7 @@ inject:
 
 運行Hexo就可以看到網頁左下角出現了Aplayer
 
-最後，如果你想切換頁面時，音樂不會中斷。請把主題配置文件的`pjax`設為`true`
+最後，如果你想切換頁面時，音樂不會中斷。請把主题配置文件的`pjax`設為`true`
 
 ## UI 調整
 
@@ -152,7 +152,7 @@ inject:
 
 ![aplayer1](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-add-aplayer-css-bottom.gif)
 
-在主題配置文件中，添加到`inject`去
+在主题配置文件中，添加到`inject`去
 
 ```yaml
 inject:
@@ -170,7 +170,7 @@ inject:
 
 ![butterfly-add-aplayer-left](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-add-aplayer-left.gif)
 
-在主題配置文件中，添加到`inject`去
+在主题配置文件中，添加到`inject`去
 
 ```yaml
 inject:

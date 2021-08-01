@@ -1,11 +1,11 @@
 ---
-title: 標籤外掛(Tag Plugins)
+title: 标签外挂(Tag Plugins)
 tags:
-  - 標籤外掛
+  - 标签外挂
 categories:
-  - Demo
-keywords: "Butterfly,標籤,tag"
-description: 標籤外掛(Tag Plugins)
+  - Butterfly教程
+keywords: "Butterfly,标签,tag"
+description: 标签外挂(Tag Plugins)
 abbrlink: 2df239ce
 date: 2020-01-05 21:41:03
 top_img:
@@ -28,7 +28,7 @@ comments: false
 今當遠離，臨表涕零，不知所言。
 <!-- endtab -->
 
-<!-- tab 圖庫 -->
+<!-- tab 图库 -->
 {% gallery %}
 ![](https://i.loli.net/2019/12/25/Jj8FXuKVlOea4Ec.jpg)
 ![](https://i.loli.net/2019/12/25/eqBGrXx9tWsZOao.jpg)
@@ -43,7 +43,7 @@ comments: false
 <!-- tab 李白 -->
 李白（701年5月19日－762年11月30日），字太白，號青蓮居士，中國唐朝詩人，自言祖籍隴西成紀（今甘肅省天水市秦安縣），先世西涼武昭王李暠之後，與李唐皇室同宗。幼時內遷，寄籍劍南道綿州（今四川省江油市青蓮鎮）。另外，郭沫若研究認為李白出生於吉爾吉斯碎葉河上的碎葉城，屬唐安西都護府（今楚河州托克馬克市），該説有一定影響。有「詩仙」、「詩俠」、「酒仙」、「謫仙人」等稱呼，活躍於盛唐，為傑出的浪漫主義詩人。與杜甫合稱「李杜」。被賀知章驚呼為「天上謫仙」。
 
-{% subtabs 李白詩集 %}
+{% subtabs 李白诗集 %}
 <!-- tab 行路難-->
 金樽清酒鬥十千，玉盤珍羞值萬錢。
 停杯投箸不能食，拔劍四顧心茫然。
@@ -242,299 +242,299 @@ gantt
 
 ```markdown
 {% note simple %}
-默認 提示塊標籤
+默認 提示塊标签
 {% endnote %}
 
 {% note default simple %}
-default 提示塊標籤
+default 提示塊标签
 {% endnote %}
 
 {% note primary simple %}
-primary 提示塊標籤
+primary 提示塊标签
 {% endnote %}
 
 {% note success simple %}
-success 提示塊標籤
+success 提示塊标签
 {% endnote %}
 
 {% note info simple %}
-info 提示塊標籤
+info 提示塊标签
 {% endnote %}
 
 {% note warning simple %}
-warning 提示塊標籤
+warning 提示塊标签
 {% endnote %}
 
 {% note danger simple %}
-danger 提示塊標籤
+danger 提示塊标签
 {% endnote %}
 ```
 
 {% note %}
-默認 提示塊標籤
+默認 提示塊标签
 {% endnote %}
 
 {% note default %}
-default 提示塊標籤
+default 提示塊标签
 {% endnote %}
 
 {% note primary %}
-primary 提示塊標籤
+primary 提示塊标签
 {% endnote %}
 
 {% note success %}
-success 提示塊標籤
+success 提示塊标签
 {% endnote %}
 
 {% note info %}
-info 提示塊標籤
+info 提示塊标签
 {% endnote %}
 
 {% note warning %}
-warning 提示塊標籤
+warning 提示塊标签
 {% endnote %}
 
 {% note danger %}
-danger 提示塊標籤
+danger 提示塊标签
 {% endnote %}
 
 > modern
 
 ```markdown
 {% note modern %}
-默認 提示塊標籤
+默認 提示塊标签
 {% endnote %}
 
 {% note default modern %}
-default 提示塊標籤
+default 提示塊标签
 {% endnote %}
 
 {% note primary modern %}
-primary 提示塊標籤
+primary 提示塊标签
 {% endnote %}
 
 {% note success modern %}
-success 提示塊標籤
+success 提示塊标签
 {% endnote %}
 
 {% note info modern %}
-info 提示塊標籤
+info 提示塊标签
 {% endnote %}
 
 {% note warning modern %}
-warning 提示塊標籤
+warning 提示塊标签
 {% endnote %}
 
 {% note danger modern %}
-danger 提示塊標籤
+danger 提示塊标签
 {% endnote %}
 ```
 
 {% note modern %}
-默認 提示塊標籤
+默認 提示塊标签
 {% endnote %}
 
 {% note default modern %}
-default 提示塊標籤
+default 提示塊标签
 {% endnote %}
 
 {% note primary modern %}
-primary 提示塊標籤
+primary 提示塊标签
 {% endnote %}
 
 {% note success modern %}
-success 提示塊標籤
+success 提示塊标签
 {% endnote %}
 
 {% note info modern %}
-info 提示塊標籤
+info 提示塊标签
 {% endnote %}
 
 {% note warning modern %}
-warning 提示塊標籤
+warning 提示塊标签
 {% endnote %}
 
 {% note danger modern %}
-danger 提示塊標籤
+danger 提示塊标签
 {% endnote %}
 
 > flat
 
 ```markdown
 {% note flat %}
-默認 提示塊標籤
+默認 提示塊标签
 {% endnote %}
 
 {% note default flat %}
-default 提示塊標籤
+default 提示塊标签
 {% endnote %}
 
 {% note primary flat %}
-primary 提示塊標籤
+primary 提示塊标签
 {% endnote %}
 
 {% note success flat %}
-success 提示塊標籤
+success 提示塊标签
 {% endnote %}
 
 {% note info flat %}
-info 提示塊標籤
+info 提示塊标签
 {% endnote %}
 
 {% note warning flat %}
-warning 提示塊標籤
+warning 提示塊标签
 {% endnote %}
 
 {% note danger flat %}
-danger 提示塊標籤
+danger 提示塊标签
 {% endnote %}
 ```
 {% note flat %}
-默認 提示塊標籤
+默認 提示塊标签
 {% endnote %}
 
 {% note default flat %}
-default 提示塊標籤
+default 提示塊标签
 {% endnote %}
 
 {% note primary flat %}
-primary 提示塊標籤
+primary 提示塊标签
 {% endnote %}
 
 {% note success flat %}
-success 提示塊標籤
+success 提示塊标签
 {% endnote %}
 
 {% note info flat %}
-info 提示塊標籤
+info 提示塊标签
 {% endnote %}
 
 {% note warning flat %}
-warning 提示塊標籤
+warning 提示塊标签
 {% endnote %}
 
 {% note danger flat %}
-danger 提示塊標籤
+danger 提示塊标签
 {% endnote %}
 
 > disabled
 
 ```markdown
 {% note disabled %}
-默認 提示塊標籤
+默認 提示塊标签
 {% endnote %}
 
 {% note default disabled %}
-default 提示塊標籤
+default 提示塊标签
 {% endnote %}
 
 {% note primary disabled %}
-primary 提示塊標籤
+primary 提示塊标签
 {% endnote %}
 
 {% note success disabled %}
-success 提示塊標籤
+success 提示塊标签
 {% endnote %}
 
 {% note info disabled %}
-info 提示塊標籤
+info 提示塊标签
 {% endnote %}
 
 {% note warning disabled %}
-warning 提示塊標籤
+warning 提示塊标签
 {% endnote %}
 
 {% note danger disabled %}
-danger 提示塊標籤
+danger 提示塊标签
 {% endnote %}
 ```
 
 {% note disabled %}
-默認 提示塊標籤
+默認 提示塊标签
 {% endnote %}
 
 {% note default disabled %}
-default 提示塊標籤
+default 提示塊标签
 {% endnote %}
 
 {% note primary disabled %}
-primary 提示塊標籤
+primary 提示塊标签
 {% endnote %}
 
 {% note success disabled %}
-success 提示塊標籤
+success 提示塊标签
 {% endnote %}
 
 {% note info disabled %}
-info 提示塊標籤
+info 提示塊标签
 {% endnote %}
 
 {% note warning disabled %}
-warning 提示塊標籤
+warning 提示塊标签
 {% endnote %}
 
 {% note danger disabled %}
-danger 提示塊標籤
+danger 提示塊标签
 {% endnote %}
 
 > no-icon
 
 ```markdown
 {% note no-icon %}
-默認 提示塊標籤
+默認 提示塊标签
 {% endnote %}
 
 {% note default no-icon %}
-default 提示塊標籤
+default 提示塊标签
 {% endnote %}
 
 {% note primary no-icon %}
-primary 提示塊標籤
+primary 提示塊标签
 {% endnote %}
 
 {% note success no-icon %}
-success 提示塊標籤
+success 提示塊标签
 {% endnote %}
 
 {% note info no-icon %}
-info 提示塊標籤
+info 提示塊标签
 {% endnote %}
 
 {% note warning no-icon %}
-warning 提示塊標籤
+warning 提示塊标签
 {% endnote %}
 
 {% note danger no-icon %}
-danger 提示塊標籤
+danger 提示塊标签
 {% endnote %}
 ```
 
 {% note no-icon %}
-默認 提示塊標籤
+默認 提示塊标签
 {% endnote %}
 
 {% note default no-icon %}
-default 提示塊標籤
+default 提示塊标签
 {% endnote %}
 
 {% note primary no-icon %}
-primary 提示塊標籤
+primary 提示塊标签
 {% endnote %}
 
 {% note success no-icon %}
-success 提示塊標籤
+success 提示塊标签
 {% endnote %}
 
 {% note info no-icon %}
-info 提示塊標籤
+info 提示塊标签
 {% endnote %}
 
 {% note warning no-icon %}
-warning 提示塊標籤
+warning 提示塊标签
 {% endnote %}
 
 {% note danger no-icon %}
-danger 提示塊標籤
+danger 提示塊标签
 {% endnote %}
 
 ### 方法二
@@ -780,7 +780,7 @@ danger 提示塊標籤
 {% endnote %}
 
 
-## Gallery 相冊圖庫
+## Gallery 相冊图库
 
 <div class="gallery-group-main">
 {% galleryGroup '壁紙' '收藏的一些壁紙' '/Gallery/wallpaper' https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png %}

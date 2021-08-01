@@ -1,10 +1,10 @@
 ---
-title: Hexo Built-in Tag Plugins (Hexo內置標籤外掛)
+title: Hexo Built-in Tag Plugins (Hexo內置标签外挂)
 abbrlink: 39b121ef
 date: 2020-05-12 22:33:11
-tags: 標籤外掛
-categories: Demo
-keywords: 'hexo,butterfly,主題,doc,教程,文檔,Tag Plugins,Plugins'
+tags: 标签外挂
+categories: Butterfly教程
+keywords: 'hexo,butterfly,主题,doc,教程,文档,Tag Plugins,Plugins'
 description: Hexo Built-in Tag Plugins
 top_img:
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Hexo-Built-in-Tag-Plugins-COVER.png
@@ -343,31 +343,31 @@ For instance:
 
 **Display title of the post.**
 
-`{% raw %}{% post_link 標籤外掛-Tag-Plugins %}{% endraw %}`
+`{% raw %}{% post_link 标签外挂-Tag-Plugins %}{% endraw %}`
 
-{% post_link 標籤外掛-Tag-Plugins %}
+{% post_link 标签外挂-Tag-Plugins %}
 
 **Display custom text.**
 
-`{% raw %}{% post_link 標籤外掛-Tag-Plugins 'Link to a post' %}{% endraw %}`
+`{% raw %}{% post_link 标签外挂-Tag-Plugins 'Link to a post' %}{% endraw %}`
 
-{% post_link 標籤外掛-Tag-Plugins 'Link to a post' %}
+{% post_link 标签外挂-Tag-Plugins 'Link to a post' %}
 
 **Escape title.**
 
 ```
-{% post_link 標籤外掛-Tag-Plugins 'How to use <b> tag in title' %}
+{% post_link 标签外挂-Tag-Plugins 'How to use <b> tag in title' %}
 ```
 
-{% post_link 標籤外掛-Tag-Plugins 'How to use <b> tag in title' %}
+{% post_link 标签外挂-Tag-Plugins 'How to use <b> tag in title' %}
 
 **Do not escape title.**
 
 ```
-{% post_link 標籤外掛-Tag-Plugins '<b>bold</b> custom title' false %}
+{% post_link 标签外挂-Tag-Plugins '<b>bold</b> custom title' false %}
 ```
 
-{% post_link 標籤外掛-Tag-Plugins '<b>bold</b> custom title' false %}
+{% post_link 标签外挂-Tag-Plugins '<b>bold</b> custom title' false %}
 
 ## Include Assets
 

@@ -1,14 +1,14 @@
 ---
-title: Butterfly 安裝文檔(三) 主題配置-1
+title: Butterfly 安裝文檔(三) 主题配置-1
 date: 2020-05-28 22:36:02
 tags:
   - 教程
   - Hexo
-  - 主題
+  - 主题
   - butterfly
-categories: Docs文檔
-keywords: 'hexo,butterfly,主題,doc,教程,文檔'
-description: Butterfly安裝文檔-主題配置
+categories: Butterfly文档
+keywords: 'hexo,butterfly,主题,doc,教程,文檔'
+description: Butterfly安裝文檔-主题配置
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-docs-03-cover.png
 abbrlink: 4aa8abbe
 comments: false
@@ -26,7 +26,7 @@ comments: false
 
  📚  文檔目錄
 
-{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主題頁面 ' 📑 主題頁面' %} - {% post_link Butterfly-安裝文檔-三-主題配置-1 ' 🛠 主題配置-1' %} - {% post_link Butterfly-安裝文檔-四-主題配置-2 ' ⚔️ 主題配置-2' %} - {% post_link Butterfly-安裝文檔-五-主題問答 ' ❓ 主題問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
+{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主题頁面 ' 📑 主题頁面' %} - {% post_link Butterfly-安裝文檔-三-主题配置-1 ' 🛠 主题配置-1' %} - {% post_link Butterfly-安裝文檔-四-主题配置-2 ' ⚔️ 主题配置-2' %} - {% post_link Butterfly-安裝文檔-五-主题問答 ' ❓ 主题問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
 
 {% endnote %}
 
@@ -44,7 +44,7 @@ comments: false
 
 默認語言是 en
 
-主題支持三種語言
+主题支持三種語言
 
 - default(en)
 - zh-CN (簡體中文)
@@ -58,7 +58,7 @@ comments: false
 
 ## 導航菜單
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
   Home: / || fas fa-home
@@ -106,11 +106,11 @@ menu:
 
 {% endnote %}
 
-### 代碼高亮主題
+### 代碼高亮主题
 
 {% tabs highlight-theme %}
 
-<!-- tab 默認主題 -->
+<!-- tab 默認主题 -->
 `Butterfly` 支持6種代碼高亮樣式：
 
 - darker
@@ -120,7 +120,7 @@ menu:
 - mac
 - mac light
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 highlight_theme: light
@@ -152,11 +152,11 @@ highlight_theme: light
 
 <!-- endtab -->
 
-<!-- tab 自定義主題 -->
+<!-- tab 自定義主题 -->
 
-主題從3.0開始，支持使用自定義的代碼顔色。
+主题從3.0開始，支持使用自定義的代碼顔色。
 
-如何自定義主題，請查看下面這篇文章。
+如何自定義主题，請查看下面這篇文章。
 
 {% post_link 自定義代碼配色 ' 自定義代碼配色' %}
 
@@ -166,9 +166,9 @@ highlight_theme: light
 
 ### 代碼複製
 
-主題支持代碼複製功能
+主题支持代碼複製功能
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 highlight_copy: true
@@ -184,7 +184,7 @@ highlight_copy: true
 - false 代碼狂展開，有`>`點擊按鈕
 - none 不顯示`>`按鈕
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 highlight_shrink: true #代碼框不展開，需點擊 '>' 打開
@@ -194,9 +194,9 @@ highlight_shrink: true #代碼框不展開，需點擊 '>' 打開
 
 你也可以在post/page頁對應的markdown文件front-matter添加highlight_shrink來獨立配置。
 
-當**主題配置文件中**的 `highlight_shrink `設為true時，可在front-matter添加`highlight_shrink: false`來單獨配置文章展開代碼框。
+當**主题配置文件中**的 `highlight_shrink `設為true時，可在front-matter添加`highlight_shrink: false`來單獨配置文章展開代碼框。
 
-當**主題配置文件中**的 `highlight_shrink `設為false時，可在front-matter添加`highlight_shrink: true`來單獨配置文章收縮代碼框。
+當**主题配置文件中**的 `highlight_shrink `設為false時，可在front-matter添加`highlight_shrink: true`來單獨配置文章收縮代碼框。
 
 {% endnote %}
 
@@ -216,7 +216,7 @@ highlight_shrink: true #代碼框不展開，需點擊 '>' 打開
 
 在默認情況下，Hexo 在編譯的時候不會實現代碼自動換行。如果你不希望在代碼塊的區域裏有橫向滾動條的話，那麼你可以考慮開啟這個功能。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 code_word_wrap: true
@@ -298,7 +298,7 @@ Mobile:
 
 ## 主頁文章節選(自動節選和文章頁description)
 
-因為主題UI的關係，`主頁文章節選`只支持`自動節選`和`文章頁description`。
+因為主题UI的關係，`主頁文章節選`只支持`自動節選`和`文章頁description`。
 
 在`butterfly`裏，有四種可供選擇
 
@@ -307,7 +307,7 @@ Mobile:
 3. **auto_excerpt：**只顯示自動節選
 4. **false：** 不顯示文章內容
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 index_post_content:
@@ -397,7 +397,7 @@ category_per_img：
 
 如果不想在首頁顯示cover,可以設置為`false`
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 cover:
@@ -444,7 +444,7 @@ default_cover:
 
 這個選項是用來顯示文章的相關信息的。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 post_meta:
@@ -490,7 +490,7 @@ post_meta:
 
 為你的博客文章展示文章版權和許可協議。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 post_copyright:
@@ -531,7 +531,7 @@ copyright_info: 此文章版權歸xxxxx所有，如有轉載，請註明來自�
 
 link可以不寫，會默認為圖片的鏈接。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 reward:
@@ -551,7 +551,7 @@ reward:
 
 在文章頁，會有一個目錄，用於顯示TOC。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 toc:
@@ -582,13 +582,13 @@ toc:
 
 在你的文章`md`文件的頭部，加入`toc_number`和`toc`，並配置`true`或者`false`即可。
 
-主題會優先判斷文章Markdown的Front-matter是否有配置，如有，則以Front-matter的配置為準。否則，以**主題配置文件中**的配置為準
+主题會優先判斷文章Markdown的Front-matter是否有配置，如有，則以Front-matter的配置為準。否則，以**主题配置文件中**的配置為準
 
 ### 相關文章
 
 相關文章推薦的原理是根據文章tags的比重來推薦
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 related_post:
@@ -604,7 +604,7 @@ related_post:
 開啟文章錨點後，當你在文章頁進行滾動時，文章鏈接會根據標題ID進行替換
 (注意: 每替換一次，會留下一個歷史記錄。所以如果一篇文章有很多錨點的話，網頁的歷史記錄會很多。)
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # anchor
@@ -682,7 +682,7 @@ post_pagination: false
 
 ## 頭像
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 avatar:
@@ -696,7 +696,7 @@ avatar:
 
 可開啟圖片Figcaption描述文字顯示
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 photofigcaption: true
@@ -743,7 +743,7 @@ Lorem ipsum dolor sit amet, test link consectetur adipiscing elit. Strong text p
 
 `since`是一個來展示你站點起始時間的選項。它位於頁面的最底部。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 footer:
@@ -758,7 +758,7 @@ footer:
 
 `custom_text`是一個給你用來在頁腳自定義文本的選項。通常你可以在這裏寫聲明文本等。支持 HTML。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 custom_text: Hi, welcome to my <a href="https://butterfly.js.org/">blog</a>!
@@ -780,7 +780,7 @@ custom_text: <a href="icp鏈接"><img class="icp-icon" src="icp圖片"><span>備
 
 右下角會有簡繁轉換按鈕。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 translate:
@@ -809,7 +809,7 @@ translate:
 
 右下角會有夜間模式按鈕
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # dark mode
@@ -838,7 +838,7 @@ autoChangeMode: false 取消自動切換
 
 只會出現在文章頁面，右下角會有閲讀模式按鈕。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 readmode: true
@@ -850,7 +850,7 @@ readmode: true
 
 可以改變字體大小（最小隻能到 10px，最大隻能到 20px）
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 # Change font size
@@ -863,7 +863,7 @@ change_font_size: true
 
 可自行決定哪個項目需要顯示，可決定位置，也可以設置不顯示側邊欄。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 aside:
@@ -931,7 +931,7 @@ aside:
 
 訪問 busuanzi 的[官方網站](http://busuanzi.ibruce.info/)查看更多的介紹。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 busuanzi:
@@ -948,7 +948,7 @@ busuanzi:
 
 網頁已運行時間
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 runtimeshow:
@@ -969,7 +969,7 @@ runtimeshow:
 
 最新評論只會在刷新時才會去讀取，並不會實時變化
 
-由於 API 有 訪問次數限制，為了避免調用太多，主題默認存取期限為 10 分鐘。也就是説，調用後資料會存在 *localStorage* 裏，10分鐘內刷新網站只會去 *localStorage* 讀取資料。 10 分鐘期限一過，刷新頁面時才會去調取 API 讀取新的數據。（ 3.6.0 新增了 `storage` 配置，可自行配置緩存時間）
+由於 API 有 訪問次數限制，為了避免調用太多，主题默認存取期限為 10 分鐘。也就是説，調用後資料會存在 *localStorage* 裏，10分鐘內刷新網站只會去 *localStorage* 讀取資料。 10 分鐘期限一過，刷新頁面時才會去調取 API 讀取新的數據。（ 3.6.0 新增了 `storage` 配置，可自行配置緩存時間）
 
 {% endnote %}
 
@@ -977,7 +977,7 @@ runtimeshow:
 
 在側邊欄顯示最新評論板塊
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```js
 # Aside widget - Newest Comments
@@ -1010,13 +1010,13 @@ newest_comments:
 
 標籤外掛是Hexo獨有的功能，並不是標準的Markdown格式。
 
-以下的寫法，只適用於Butterfly主題，用在其它主題上不會有效果，甚至可能會報錯。使用前請留意
+以下的寫法，只適用於Butterfly主题，用在其它主题上不會有效果，甚至可能會報錯。使用前請留意
 
 {% endnote %}
 
 {% note warning %}
 
-標籤外掛雖然能為主題帶來一些額外的功能和UI方面的強化，但是，標籤外掛也有明顯的限制，使用時請留意。
+標籤外掛雖然能為主题帶來一些額外的功能和UI方面的強化，但是，標籤外掛也有明顯的限制，使用時請留意。
 
 {% endnote %}
 
@@ -1026,9 +1026,9 @@ newest_comments:
 
 <!-- tab 通用設置 -->
 
-移植於next主題，並進行修改。
+移植於next主题，並進行修改。
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 note:
@@ -1835,7 +1835,7 @@ mermaid標籤不允許嵌套於一些隱藏屬性的標籤外掛，例如: tag-h
 
 使用mermaid標籤可以繪製Flowchart（流程圖）、Sequence diagram（時序圖 ）、Class Diagram（類別圖）、State Diagram（狀態圖）、Gantt（甘特圖）和Pie Chart（圓形圖），具體可以查看[mermaid文檔](https://mermaid-js.github.io/mermaid/#/)
 
-修改 `主題配置文件`
+修改 `主题配置文件`
 
 ```yaml
 mermaid:
@@ -1868,7 +1868,7 @@ pie
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-mermaid.png)
 
 ### Tabs
-移植於next主題
+移植於next主题
 
 使用方法
 
@@ -2116,7 +2116,7 @@ This is my website, click the button {% btn 'https://butterfly.js.org/',Butterfl
 
 ### inlineImg
 
-主題中的圖片都是默認以`塊級元素`顯示，如果你想以`內聯元素`顯示，可以使用這個標簽外掛。
+主题中的圖片都是默認以`塊級元素`顯示，如果你想以`內聯元素`顯示，可以使用這個標簽外掛。
 
 ```markdown
 {% inlineImg [src] [height] %}
@@ -2171,4 +2171,4 @@ This is my website, click the button {% btn 'https://butterfly.js.org/',Butterfl
 
 
 
-{% btn '/posts/ceeb73f/',⚔️ Butterfly-安裝文檔-四-主題配置-2,far fa-hand-point-right,block red right larger %}
+{% btn '/posts/ceeb73f/',⚔️ Butterfly-安裝文檔-四-主题配置-2,far fa-hand-point-right,block red right larger %}

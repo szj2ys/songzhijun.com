@@ -4,10 +4,10 @@ date: 2020-05-28 22:31:46
 tags:
   - 教程
   - Hexo
-  - 主題
+  - 主题
   - butterfly
-categories: Docs文檔
-keywords: 'hexo,butterfly,主題,doc,教程,文檔'
+categories: Butterfly文档
+keywords: 'hexo,butterfly,主题,doc,教程,文檔'
 description: Butterfly安裝文檔-快速開始
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-docs-01-cover.png
 abbrlink: 21cfbf15
@@ -27,7 +27,7 @@ comments: false
 
  📚  文檔目錄
 
-{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主題頁面 ' 📑 主題頁面' %} - {% post_link Butterfly-安裝文檔-三-主題配置-1 ' 🛠 主題配置-1' %} - {% post_link Butterfly-安裝文檔-四-主題配置-2 ' ⚔️ 主題配置-2' %} - {% post_link Butterfly-安裝文檔-五-主題問答 ' ❓ 主題問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
+{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主题頁面 ' 📑 主题頁面' %} - {% post_link Butterfly-安裝文檔-三-主题配置-1 ' 🛠 主题配置-1' %} - {% post_link Butterfly-安裝文檔-四-主题配置-2 ' ⚔️ 主题配置-2' %} - {% post_link Butterfly-安裝文檔-五-主题問答 ' ❓ 主题問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
 
 {% endnote %}
 
@@ -67,7 +67,7 @@ git clone -b dev https://github.com/jerryc127/hexo-theme-butterfly.git themes/bu
 
 {% note info %}
 
-升級方法：在主題目錄下，運行 `git pull`
+升級方法：在主题目錄下，運行 `git pull`
 
 {% endnote %}
 
@@ -97,7 +97,7 @@ git clone -b dev https://gitee.com/iamjerryw/hexo-theme-butterfly.git themes/but
 
 {% note info %}
 
-升級方法：在主題目錄下，運行`git pull`
+升級方法：在主题目錄下，運行`git pull`
 
 {% endnote %}
 
@@ -109,7 +109,7 @@ git clone -b dev https://gitee.com/iamjerryw/hexo-theme-butterfly.git themes/but
 
 > 此方法只支持 Hexo 5.0.0 以上版本
 >
-> ***通過 npm 安裝並不會在 themes 裏生成主題文件夾，而是在 node_modules 裏生成***
+> ***通過 npm 安裝並不會在 themes 裏生成主题文件夾，而是在 node_modules 裏生成***
 
 在你的 Hexo 根目錄裏
 
@@ -127,9 +127,9 @@ npm i hexo-theme-butterfly
 
 {% endtabs %}
 
-## 應用主題
+## 應用主题
 
-修改 Hexo 根目錄下的 `_config.yml`，把主題改為`butterfly`
+修改 Hexo 根目錄下的 `_config.yml`，把主题改為`butterfly`
 
 ```yaml
 theme: butterfly
@@ -153,7 +153,7 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 
 {% endnote %}
 
-為了減少升級主題後帶來的不便，請使用以下方法（**建議，可以不做**）。
+為了減少升級主题後帶來的不便，請使用以下方法（**建議，可以不做**）。
 
 {% tabs update-suggestion %}
 
@@ -163,11 +163,11 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 >
 > 如果已經在 `source/_data/` 創建了 `butterfly.yml`，請記得**刪除**掉。
 
-在 hexo 的根目錄創建一個文件 `_config.butterfly.yml`，並把主題目錄的 `_config.yml` **内容**複製到 `_config.butterfly.yml` 去。
+在 hexo 的根目錄創建一個文件 `_config.butterfly.yml`，並把主题目錄的 `_config.yml` **内容**複製到 `_config.butterfly.yml` 去。
 
 以後只需要在 `_config.butterfly.yml`進行配置就行。
 
-Hexo會自動**合併**主題中的`_config.yml`和 `_config.butterfly.yml`裏的配置，如果存在同名配置，會使用`_config.butterfly.yml`的配置，其優先度較高。
+Hexo會自動**合併**主题中的`_config.yml`和 `_config.butterfly.yml`裏的配置，如果存在同名配置，會使用`_config.butterfly.yml`的配置，其優先度較高。
 
 ![image-20200805191531090](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-docs-install-suggestion-1.png)
 
@@ -181,17 +181,17 @@ Hexo會自動**合併**主題中的`_config.yml`和 `_config.butterfly.yml`裏�
 
 {% endnote %}
 
-~~為了減少升級主題後帶來的不便, `Butterfly` 使用了 [data files](https://hexo.io/docs/data-files.html) 特性。~~
+~~為了減少升級主题後帶來的不便, `Butterfly` 使用了 [data files](https://hexo.io/docs/data-files.html) 特性。~~
 
-~~推薦把**主題**默認的配置文件`_config.yml` 複製到 Hexo 根目錄下的`source/_data/` 目錄下，然後將文件名改為 `butterfly.yml`（如果`source/_data/` 的目錄不存在就創建一個）。~~
+~~推薦把**主题**默認的配置文件`_config.yml` 複製到 Hexo 根目錄下的`source/_data/` 目錄下，然後將文件名改為 `butterfly.yml`（如果`source/_data/` 的目錄不存在就創建一個）。~~
 
 {% note warning %}
 
-~~注意，如果你創建了`butterfly.yml`, 它將會替換主題默認配置文件`_config.yml`裏的配置項 (~~不是合併而是替換~~，3.1.0開始將會是合併)~~
+~~注意，如果你創建了`butterfly.yml`, 它將會替換主题默認配置文件`_config.yml`裏的配置項 (~~不是合併而是替換~~，3.1.0開始將會是合併)~~
 
-~~採用`butterfly.yml`的目的是，因為升級主題的時候，有可能會覆蓋到配置文件，以至於每次更新的時候都需要重新配置文件。如果使用`butterfly.yml`，就算主題目錄下的`_config.yml`被覆蓋，主題只會去`butterfly.yml`讀取配置。~~
+~~採用`butterfly.yml`的目的是，因為升級主题的時候，有可能會覆蓋到配置文件，以至於每次更新的時候都需要重新配置文件。如果使用`butterfly.yml`，就算主题目錄下的`_config.yml`被覆蓋，主题只會去`butterfly.yml`讀取配置。~~
 
-~~由於主題在添加功能或者修復Bugs的情況下，可能會涉及到**配置文件**的修改。這時候，如果升級主題，需要把新增加的配置添加到`butterfly.yml`去，不然很大機會會出現報錯。（ 3.1.0 之後，應該不會出現這種情況）~~
+~~由於主题在添加功能或者修復Bugs的情況下，可能會涉及到**配置文件**的修改。這時候，如果升級主题，需要把新增加的配置添加到`butterfly.yml`去，不然很大機會會出現報錯。（ 3.1.0 之後，應該不會出現這種情況）~~
 
 {% endnote %}
 
@@ -201,4 +201,4 @@ Hexo會自動**合併**主題中的`_config.yml`和 `_config.butterfly.yml`裏�
 
 
 
-{% btn '/posts/dc584b87/',📑 Butterfly 安裝文檔(二) 主題頁面,far fa-hand-point-right,block right larger %}
+{% btn '/posts/dc584b87/',📑 Butterfly 安裝文檔(二) 主题頁面,far fa-hand-point-right,block right larger %}

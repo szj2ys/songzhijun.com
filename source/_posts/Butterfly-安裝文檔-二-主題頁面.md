@@ -1,15 +1,15 @@
 ---
-title: Butterfly 安裝文檔(二) 主題頁面
+title: Butterfly 安裝文檔(二) 主题頁面
 date: 2020-05-28 22:34:41
 tags:
   - 教程
   - Hexo
-  - 主題
+  - 主题
   - butterfly
 categories: 
-- Docs文檔
-keywords: 'hexo,butterfly,主題,doc,教程,文檔'
-description: Butterfly安裝文檔-主題頁面
+- Butterfly文档
+keywords: 'hexo,butterfly,主题,doc,教程,文檔'
+description: Butterfly安裝文檔-主题頁面
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-docs-02-cover.png
 abbrlink: dc584b87
 comments: false
@@ -27,7 +27,7 @@ comments: false
 
  📚  文檔目錄
 
-{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主題頁面 ' 📑 主題頁面' %} - {% post_link Butterfly-安裝文檔-三-主題配置-1 ' 🛠 主題配置-1' %} - {% post_link Butterfly-安裝文檔-四-主題配置-2 ' ⚔️ 主題配置-2' %} - {% post_link Butterfly-安裝文檔-五-主題問答 ' ❓ 主題問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
+{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主题頁面 ' 📑 主题頁面' %} - {% post_link Butterfly-安裝文檔-三-主题配置-1 ' 🛠 主题配置-1' %} - {% post_link Butterfly-安裝文檔-四-主题配置-2 ' ⚔️ 主题配置-2' %} - {% post_link Butterfly-安裝文檔-五-主题問答 ' ❓ 主题問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
 
 {% endnote %}
 
@@ -302,7 +302,7 @@ type: "link"
 
 ## 404頁面
 
-主題內置了一個簡單的404頁面，可在設置中開啟
+主题內置了一個簡單的404頁面，可在設置中開啟
 
 {% note info %}
 
@@ -322,4 +322,4 @@ error_404:
 
 ![](https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/hexo-theme-butterfly-docs-error404.png)
 
-{% btn '/posts/4aa8abbe/',🛠 Butterfly 安裝文檔(三) 主題配置,far fa-hand-point-right,block pink right larger %}
+{% btn '/posts/4aa8abbe/',🛠 Butterfly 安裝文檔(三) 主题配置,far fa-hand-point-right,block pink right larger %}
