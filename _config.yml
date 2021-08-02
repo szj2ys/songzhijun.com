@@ -51,6 +51,11 @@ skip_render:
   - boxify/*
   - boxify/**
   - boxify/***
+  - navigate/*
+  - navigate/**
+  - navigate/***
+  - navigate/****
+  - navigate/*****
 
 # Writing
 new_post_name: :title.md # File name of new posts
