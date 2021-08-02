@@ -12,7 +12,7 @@ description: Butterfly导入静态网页项目
 abbrlink: 13c1571e
 date: 2021-08-02 10:29:58
 top_img:
-cover:
+cover: https://img2.baidu.com/it/u=623624575,2298486196&fm=26&fmt=auto&gp=0.jpg
 ---
 
 - 首先使用 hexo new page “新创建的文章名称”
