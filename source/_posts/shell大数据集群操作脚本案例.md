@@ -11,7 +11,7 @@ abbrlink: 7f567768
 date: 2021-08-01 14:32:47
 description: 大数据集群操作脚本案例
 top_img:
-cover:
+cover: https://img1.baidu.com/it/u=2462318700,2587293587&fm=26&fmt=auto&gp=0.jpg
 ---
 
 

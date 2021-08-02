@@ -27,10 +27,6 @@
 - class_name: '<i class="fas fa-fan" style="color:#00cccc;padding-right: 0.4rem"></i>友情链接'
   class_desc: '<span style="font-style: italic;">最可爱的朋友在这儿</span>'
   link_list:
-    - name: 码酱
-      link: http://luokangyuan.com
-      avatar: http://image.luokangyuan.com/1_qq_27922023.jpg
-      descr: 我不是大佬，只是在追寻大佬的脚步
     - name: 苏剑林
       link: https://kexue.fm
       avatar: https://kexue.fm/usr/themes/geekg/images/avatar.png
@@ -43,18 +39,6 @@
       link: https://gitee.com/pengzhile/ide-eval-resetter
       avatar: https://avatars.githubusercontent.com/u/343491?v=4
       descr: 精通破解软件的知了大佬，DBeaver、jetbrains全家桶破解！
-    - name: A2Data
-      link: https://www.a2data.cn
-      avatar: https://statics.sh1a.qingstor.com/2019/06/01/24logo.png
-      descr: 武术跨行大数据，用技术推动梦想的落地！
-    - name: Five-great
-      link: http://www.fivecc.cn
-      avatar: https://statics.sh1a.qingstor.com/2019/06/01/avatar3.jpeg
-      descr: 有事多研究，没事瞎琢磨。
-    - name: Sitoi
-      link: https://sitoi.cn
-      avatar: https://statics.sh1a.qingstor.com/2019/06/01/avatar5.png
-      descr: 妄想通过成为 Spider-Man 来实现财富自由的程序猿
     - name: 过客~励む
       link: https://yafine-blog.cn
       avatar: https://statics.sh1a.qingstor.com/2019/06/01/avatar.jpg
@@ -63,10 +47,6 @@
       link: https://sunhwee.com
       avatar: https://statics.sh1a.qingstor.com/2019/06/01/avatar2.png
       descr: 凭寄狂夫书一纸，信在成都万里桥。
-    - name: 码农
-      link: https://www.90c.vip
-      avatar: https://statics.sh1a.qingstor.com/2019/06/01/coder.png
-      descr: 这里不隐含扭曲的价值观，而是整合并充盈正能量
     - name: Serok's Blog
       link: https://akioi.eu.org/
       avatar: https://cdn.jsdelivr.net/gh/SerokSSR/cdn2/k16.png
@@ -99,34 +79,10 @@
       link: https://aymetic.com
       avatar: https://cdn.jsdelivr.net/gh/Aymetic/site-source/img/avatar.jpg
       descr: 从兴趣出发
-    - name: Heo
+    - name: 张和
       link: https://blog.zhheo.com/
       avatar: https://blog.zhheo.com/img/avatar.png
-      descr: 爱折腾的设计师 
-    - name: BARAN的小站🔥🔥🔥
-      link: https://cxvh.com
-      avatar: https://cdn.jsdelivr.net/gh/cxvh/static@main/avatar/avatar.jpg
-      descr: 指尖跳动留下足迹.
-    - name: 飞鸟
-      link: https://lzxjack.top/
-      avatar: https://jack-img.oss-cn-hangzhou.aliyuncs.com/img/20201204121004.jpg
-      descr: 一只平凡的鸟罢了
-    - name: 不归路
-      link: https://cmwen.cn
-      avatar: http://q.qlogo.cn/headimg_dl?dst_uin=1914788728&spec=640&img_type=jpg
-      descr: 踏上一条不归路
-    - name: JCAlways
-      link: https://blog.zhangsifan.com
-      avatar: https://i.loli.net/2019/10/13/2a6ve3ZdW8TPCNY.jpg
-      descr: 记录前端知识
-    - name: Fungit
-      link: https://fungit.org/
-      avatar: https://fungit.org/avatar.png
-      descr: 木秀于林 风必摧之
-    - name: 白醭飙尘
-      link: https://y-jinhao.github.io/
-      avatar: https://cdn.jsdelivr.net/gh/Y-JINHAO/resources/img/avator1.png
-      descr: 无疾而终的困倦变成苋红的太阳的血瓷砖石仰慕的书架上呕吐的诗集
+      descr: 爱折腾的设计师
     - name: 冻符「Minus-K」
       link: https://www.kawashiros.club/
       avatar: https://www.kawashiros.club/resources/avatar.webp

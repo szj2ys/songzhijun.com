@@ -11,7 +11,7 @@ abbrlink: 92b0ce0c
 date: 2021-08-01 14:43:33
 description:
 top_img:
-cover:
+cover: https://img2.baidu.com/it/u=3520865170,373671751&fm=26&fmt=auto&gp=0.jpg
 ---
 
 

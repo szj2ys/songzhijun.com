@@ -35,9 +35,10 @@ menu:
     # - 音乐 || /music/ || fas fa-music
     图库: /Gallery/ || fas fa-images
     电影: /movies/ || fas fa-video
-    自言自语: /talking/ || fas fa-cubes
+    关于我: /about/ || fas fa-user-circle
   留言板: /messageboard/ || fas fa-comment-dots
-  链接: /link/ || fas fa-thumbs-up
+  链接: /link/ || fas fa-address-book
+  导航: /navigate/ || fas fa-location-arrow
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false

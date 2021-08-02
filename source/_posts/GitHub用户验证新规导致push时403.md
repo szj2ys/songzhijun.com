@@ -10,7 +10,7 @@ keywords: 'GitHub,问题解决'
 description: GitHub用户验证新规导致push时403，解决思路与方法
 top_img:
 abbrlink: 198a4223a
-cover:
+cover: https://img1.baidu.com/it/u=2990055448,1579759864&fm=26&fmt=auto&gp=0.jpg
 sticky: 90
 ---
 

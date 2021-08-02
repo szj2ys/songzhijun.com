@@ -9,8 +9,7 @@ keywords: 'Python,pyinstaller,打包,Python教程'
 abbrlink: 40aa2654
 date: 2021-08-01 14:54:30
 description:
-top_img:
-cover:
+cover: https://img1.baidu.com/it/u=1221253630,2795876430&fm=26&fmt=auto&gp=0.jpg
 ---
 
 
