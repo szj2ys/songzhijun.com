@@ -37,7 +37,8 @@ menu:
     电影: /movies/ || fas fa-video
   留言板: /messageboard/ || fas fa-comment-dots
   链接: /link/ || fas fa-address-book
-  导航: /navigate/ || fas fa-location-arrow
+  导航: https://www.songzhijun.com/wisequotes/ || fas fa-location-arrow
+#  导航: /navigate/ || fas fa-location-arrow
   关于我: /about/ || fas fa-user-circle
 
 # Hide the child menu items in mobile sidebar
