@@ -1,5 +1,5 @@
 ---
-title: Butterfly 安裝文檔(一) 快速開始
+title: Butterfly 安裝文档(一) 快速开始
 date: 2020-05-28 22:31:46
 tags:
   - 教程
@@ -7,8 +7,8 @@ tags:
   - 主题
   - butterfly
 categories: Butterfly文档
-keywords: 'hexo,butterfly,主题,doc,教程,文檔'
-description: Butterfly安裝文檔-快速開始
+keywords: 'hexo,butterfly,主题,doc,教程,文档'
+description: Butterfly安裝文档-快速开始
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-docs-01-cover.png
 abbrlink: 21cfbf15
 sticky: 100
@@ -25,9 +25,9 @@ comments: false
 
 {% note green 'fas fa-rocket' %}
 
- 📚  文檔目錄
+ 📚  文档目錄
 
-{% post_link Butterfly-安裝文檔-一-快速開始 ' 🚀 快速開始' %} - {% post_link Butterfly-安裝文檔-二-主题頁面 ' 📑 主题頁面' %} - {% post_link Butterfly-安裝文檔-三-主题配置-1 ' 🛠 主题配置-1' %} - {% post_link Butterfly-安裝文檔-四-主题配置-2 ' ⚔️ 主题配置-2' %} - {% post_link Butterfly-安裝文檔-五-主题問答 ' ❓ 主题問答' %} - {% post_link Butterfly-安裝文檔-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文檔-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
+{% post_link Butterfly-安裝文档-一-快速开始 ' 🚀 快速开始' %} - {% post_link Butterfly-安裝文档-二-主题頁面 ' 📑 主题頁面' %} - {% post_link Butterfly-安裝文档-三-主题配置-1 ' 🛠 主题配置-1' %} - {% post_link Butterfly-安裝文档-四-主题配置-2 ' ⚔️ 主题配置-2' %} - {% post_link Butterfly-安裝文档-五-主题問答 ' ❓ 主题問答' %} - {% post_link Butterfly-安裝文档-六-進階教程 ' ⚡️ 進階教程' %} - {% post_link Butterfly-安裝文档-七-更新日誌 ' ✨ 更新日誌' %} - {% post_link Butterfly-打賞 ' 🤞 打賞' %}
 
 {% endnote %}
 
@@ -147,7 +147,7 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 
 {% note blue 'fas fa-train' %}
 
-升級完成後，請到 Github 的 [Releases](https://github.com/jerryc127/hexo-theme-butterfly/releases) 界面 或者 [文檔七](https://butterfly.js.org/posts/198a4240/) 查看新版的更新內容。
+升級完成後，請到 Github 的 [Releases](https://github.com/jerryc127/hexo-theme-butterfly/releases) 界面 或者 [文档七](https://butterfly.js.org/posts/198a4240/) 查看新版的更新內容。
 
 裏面有標注  `_config` 文件的變更內容（如有），請根據實際情況更新你的配置內容。
 
@@ -177,7 +177,7 @@ Hexo會自動**合併**主题中的`_config.yml`和 `_config.butterfly.yml`裏�
 
 {% note pink 'fas fa-bahai' flat %}
 
-從 3.3.0 開始，這種方法不再支持
+從 3.3.0 开始，這種方法不再支持
 
 {% endnote %}
 
@@ -187,7 +187,7 @@ Hexo會自動**合併**主题中的`_config.yml`和 `_config.butterfly.yml`裏�
 
 {% note warning %}
 
-~~注意，如果你創建了`butterfly.yml`, 它將會替換主题默認配置文件`_config.yml`裏的配置項 (~~不是合併而是替換~~，3.1.0開始將會是合併)~~
+~~注意，如果你創建了`butterfly.yml`, 它將會替換主题默認配置文件`_config.yml`裏的配置項 (~~不是合併而是替換~~，3.1.0开始將會是合併)~~
 
 ~~採用`butterfly.yml`的目的是，因為升級主题的時候，有可能會覆蓋到配置文件，以至於每次更新的時候都需要重新配置文件。如果使用`butterfly.yml`，就算主题目錄下的`_config.yml`被覆蓋，主题只會去`butterfly.yml`讀取配置。~~
 
@@ -201,4 +201,4 @@ Hexo會自動**合併**主题中的`_config.yml`和 `_config.butterfly.yml`裏�
 
 
 
-{% btn '/posts/dc584b87/',📑 Butterfly 安裝文檔(二) 主题頁面,far fa-hand-point-right,block right larger %}
+{% btn '/posts/dc584b87/',📑 Butterfly 安裝文档(二) 主题頁面,far fa-hand-point-right,block right larger %}
