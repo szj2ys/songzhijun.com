@@ -673,17 +673,15 @@ subtitle:
 preloader: true
 
 # aside (側邊欄)
-# --------------------------------------
-
 aside:
   enable: true
-  hide: false
+  hide: true
   button: true
   mobile: true # display on mobile
   position: right # left or right
   card_author:
     enable: true
-    description: Hello!
+    description: Hello, welcome!
     button:
       enable: true
       icon: fab fa-github
