@@ -673,9 +673,11 @@ subtitle:
 preloader: true
 
 # aside (側邊欄)
+# --------------------------------------
+
 aside:
   enable: true
-  hide: fasle
+  hide: false
   button: true
   mobile: true # display on mobile
   position: right # left or right
@@ -690,8 +692,7 @@ aside:
   card_announcement:
     enable: true
     content:
-      欢迎来到我的小站，
-      <a href="https://www.songzhijun.com" style="color:#49b1f5">在下小宋</a>。
+       欢迎来到我的小站，<a href="https://www.songzhijun.com" style="color:#49b1f5">在下小宋</a>。
 
 
   card_recent_post:
