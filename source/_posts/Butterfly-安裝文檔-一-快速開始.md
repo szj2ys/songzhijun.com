@@ -12,7 +12,7 @@ description: Butterfly安裝文档-快速开始
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-docs-01-cover.png
 abbrlink: 21cfbf15
 sticky: 100
-comments: false
+comments: true
 ---
 
 {% note blue 'fas fa-bullhorn' %}

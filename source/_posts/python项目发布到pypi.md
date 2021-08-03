@@ -1,6 +1,6 @@
 ---
 title: Python项目发布到pypi
-comments: false
+comments: true
 tags:
   - Python
   - pypi

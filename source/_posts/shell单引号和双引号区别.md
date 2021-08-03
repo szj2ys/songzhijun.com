@@ -1,6 +1,6 @@
 ---
 title: shell单引号和双引号区别
-comments: false
+comments: true
 tags:
   - shell
   - 教程

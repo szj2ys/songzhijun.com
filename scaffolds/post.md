@@ -2,10 +2,11 @@
 title: {{ title }}
 date: {{ date }}
 tags:
-categories:
-keywords:
+  - 标签
+categories: 
+keywords: ''
 description:
-top_img:
-cover:
-comments: false
+top_img: 
+cover: 
+comments: true
 ---

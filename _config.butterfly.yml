@@ -296,7 +296,7 @@ comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
   use:
-    - Twikoo
+    - Valine
     - Disqusjs
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
@@ -308,16 +308,16 @@ comments:
 # disqus
 # https://disqus.com/
 disqus:
-  shortname: demo-jerryc-me
-  apikey: # For newest comments widget
+  shortname: songzhijun.com
+  apikey: 4v4jPIrbVnrqsIO3DAqmGhM0wr6NKBKn92j0NrbVhcmh8ZkVZ0b3amiIYAzJ56ma# For newest comments widget
 
 # Alternative Disqus - Render comments with Disqus API
 # DisqusJS 評論系統，可以實現在網路審查地區載入 Disqus 評論列表，兼容原版
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
-  shortname: demo-jerryc-me
-  siteName: JerryC
-  apikey: nrSx8ZhuHvjwDeKauPZ3lMnyLb7iR92BT4wl4AlKG4eJl27jxXlzOeLQ9SJP1RDW
+  shortname: songzhijun.com
+  siteName: www.songzhijun.com
+  apikey: 4v4jPIrbVnrqsIO3DAqmGhM0wr6NKBKn92j0NrbVhcmh8ZkVZ0b3amiIYAzJ56ma
   api:
   nocomment: # display when a blog post or an article has no comment attached
   admin:
@@ -346,11 +346,11 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
-  appId: # leancloud application app id
-  appKey: # leancloud application app key
+  appId: rVqqO9J44GNR8br4Q8I95bLb-gzGzoHsz # leancloud application app id
+  appKey: uWhWuv0EYLB8IklVpDXciGly # leancloud application app key
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
-  lang: en # i18n: zh-CN/zh-TW/en/ja
+  lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
   placeholder: 1. 请确保你已经看了使用文档和主题 Q&A\n2. 如果运行期间并无报错，但是预览时出现问题。请在浏览器打开该网页的情況下，按 F12 进入开发人员工具，切换到 Console 界面。\n如有报错，请试着解決。或者在提问题之前附上报错截图。\n3. 详细描述遇到的问题，附上相关的报错 / 截图 / 网址 # valine comment input placeholder (like: Please leave your footprints)
   guest_info: nick,mail,link # valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
@@ -984,6 +984,6 @@ artitalk:
   js:
   option:
   front_matter:
-    title: 自言自語
+    title: 自言自语
     comments: false
     top_img: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-demo-talking-top-img.jpg
