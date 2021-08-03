@@ -48,6 +48,9 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - docs/*
+  - docs/**
+  - docs/***
   - boxify/*
   - boxify/**
   - boxify/***
