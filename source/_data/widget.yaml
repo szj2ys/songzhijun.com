@@ -1,0 +1,14 @@
+#top:
+#  - class_name: 'card-docs card-categories'
+#    id_name:
+#    name: 文档目录
+#    icon: fas fa-car-side
+#    html: '<ul class=card-category-list>
+#    <li class=card-category-list-item><a class=card-category-list-link href=/posts/21cfbf15/ >🚀 快速开始</a></li>
+#    <li class=card-category-list-item><a class=card-category-list-link href=/posts/dc584b87/ >📑 主题页面</a></li>
+#    <li class=card-category-list-item><a class=card-category-list-link href=/posts/4aa8abbe/ >🛠 主题配置-1</a></li>
+#    <li class=card-category-list-item><a class=card-category-list-link href=/posts/ceeb73f/ >⚔️ 主题配置-2</a></li>
+#    <li class=card-category-list-item><a class=card-category-list-link href=/posts/98d20436/ >❓ 主题问答</a></li>
+#    <li class=card-category-list-item><a class=card-category-list-link href=/posts/4073eda/ >⚡️ 进阶教程</a></li>
+#    <li class=card-category-list-item><a class=card-category-list-link href=/posts/198a4240/ >✨ 更新日志</a></li>
+#    </ul>'
