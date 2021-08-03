@@ -11,7 +11,7 @@ keywords: 'hexo,butterfly,主题,doc,教程,文檔'
 description: Butterfly安裝文檔-主题問答
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-doc-05-cover.png
 abbrlink: 98d20436
-comments: false
+comments: true
 ---
 
 {% note blue 'fas fa-bullhorn' %}

@@ -11,7 +11,7 @@ description: Butterfly安裝文檔-主题配置-2
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-docs-04-cover.png
 abbrlink: ceeb73f
 date: 2020-05-28 22:38:11
-comments: false
+comments: true
 ---
 
 {% note blue 'fas fa-bullhorn' %}

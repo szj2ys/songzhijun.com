@@ -1,6 +1,5 @@
 ---
 title: Python项目发布到pypi
-comments: true
 tags:
   - Python
   - pypi
@@ -12,6 +11,7 @@ date: 2021-08-01 15:03:15
 description:
 top_img:
 cover: https://img1.baidu.com/it/u=3796794833,4230952443&fm=26&fmt=auto&gp=0.jpg
+comments: true
 ---
 
 首先注册pypi，并生成token

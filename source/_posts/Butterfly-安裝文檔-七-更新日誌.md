@@ -12,7 +12,7 @@ description: Butterfly安裝文檔-更新日誌
 cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Butterfly-docs-07-cover.png
 abbrlink: 198a4240
 toc: false
-comments: false
+comments: true
 ---
 
 {% note blue 'fas fa-bullhorn' %}
