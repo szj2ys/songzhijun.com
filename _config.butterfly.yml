@@ -34,7 +34,7 @@ menu:
 #  资讯: / || fas fa-news
   娱乐||fa fa-heartbeat:
 #    音乐: /music/ || fas fa-music
-    图库: /gallery/ || fas fa-images
+    图库: /Gallery/ || fas fa-images
 #    电影: /movies/ || fas fa-video
   留言板: /messageboard/ || fas fa-comment-dots
   链接: /link/ || fas fa-address-book
