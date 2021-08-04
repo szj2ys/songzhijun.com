@@ -138,7 +138,7 @@ deploy:
   type: git
   repo:
     - https://github.com/szj2ys/szj2ys.github.io.git
-#    - https://github.com/iszj/iszj.github.io.git
+#    - https://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@github.com/iszj/iszj.github.io.git
   branch: master
   # other deployer
 
