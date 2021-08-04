@@ -7,7 +7,7 @@ gulp  # 压缩HTML
 hexo clean
 hexo generate
 
-hexo server # 本地预览
+#hexo server # 本地预览
 hexo deploy  # 部署到Git上
 
 git add .

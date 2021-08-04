@@ -46,7 +46,7 @@ hide_sidebar_menu_child: false
 
 # Code Blocks (代码相关)
 # --------------------------------------
-highlight_theme: light # darker / pale night / light / ocean / mac / mac light /false
+highlight_theme: mac # darker / pale night / light / ocean / mac / mac light /false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -253,7 +253,7 @@ photofigcaption: false
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: 1
+post_pagination: 2
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
@@ -296,7 +296,8 @@ comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
   use:
-    - Disqusjs
+#    - Disqusjs
+    - Twikoo
   text: false # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -398,7 +399,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://butterfly-twikoo.vercel.app/
+  envId: https://twikoo-mfge-f6n1go8p6-szj2ys.vercel.app
   region:
   visitor: false
   option:
@@ -881,7 +882,6 @@ inject:
     - '<style type="text/css">.card-announcement .social-button{margin: .6rem 0 0 0; text-align: center;}.card-announcement .social-button a{display: block; margin: 0.2rem 0;background-color: var(--btn-bg); color: var(--btn-color); line-height: 1.6rem; transition: all .3s; position: relative; z-index: 1;}</style>'
     - '<link rel="preconnect" href="https://fonts.gstatic.com">'
     - '<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap" rel="stylesheet">'
-    - '<script data-ad-client="ca-pub-1902923403139213" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
   bottom:
     - '<script data-ad-client="ca-pub-1902923403139213" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
 

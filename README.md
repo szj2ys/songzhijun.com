@@ -1,5 +1,8 @@
 ## songzhijun.com
 
+
+mongodb+srv://admin:outlook621743@cluster0.9xoso.mongodb.net/Cluster0?retryWrites=true&w=majority
+
 這是 我的个人博客网站 hexo 主題 Butterfly 的文件/ Demo 倉庫
 
 使用教程
