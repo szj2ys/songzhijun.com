@@ -11,6 +11,7 @@ is like driving with your eyes closed.<br>
 在沒有錯誤日誌的情況下診斷任何問題無異於閉眼開車
 </p>
 
+<script data-ad-client="ca-pub-1902923403139213" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 ***
 
 {% note default %}
