@@ -281,12 +281,12 @@ addThis:
 # https://github.com/overtrue/share.js
 sharejs:
   enable: true
-  sites: facebook,twitter,wechat,weibo,qq
+  sites: wechat,weibo,qq,facebook,twitter
 
 # AddToAny
 # https://www.addtoany.com/
 addtoany:
-  enable: true
+  enable: false
   item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
 # Comments System
@@ -502,11 +502,11 @@ ad:
 # --------------------------------------
 site_verification:
   - name: google-site-verification
-    content: NdIUXAOVyGnnBhcrip0sksCawbdAzT0hlBZDE9u4jx6k
+    content: 9pANgEo9T-01B-QGkl4lWtWC7-ehwydH6uVvfqtfLR0
   - name: msvalidate.01
     content: 567E47D75E8DCF128d2B9623AD914701E
   - name: baidu-site-verification
-    content: code-pE5rnuxcefD
+    content: code-r1zCiXqhIw
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
