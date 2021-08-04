@@ -136,7 +136,9 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/szj2ys/szj2ys.github.io.git
+  repo:
+    - https://github.com/szj2ys/szj2ys.github.io.git
+    - https://github.com/iszj/iszj.github.io.git
   branch: master
   # other deployer
 
