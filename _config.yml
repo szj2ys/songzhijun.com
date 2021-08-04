@@ -48,6 +48,11 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - dashio/*
+  - dashio/**
+  - dashio/***
+  - dashio/****
+  - dashio/*****
   - boxify/*
   - boxify/**
   - boxify/***
