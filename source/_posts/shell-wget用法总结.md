@@ -1,6 +1,6 @@
 ---
 title: wget命令用法总结
-comments: false
+comments: true
 tags:
   - shell 命令
   - wget

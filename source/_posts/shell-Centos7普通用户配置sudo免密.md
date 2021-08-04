@@ -1,6 +1,6 @@
 ---
 title: Centos7普通用户配置sudo免密
-comments: false
+comments: true
 tags:
   - shell
   - linux

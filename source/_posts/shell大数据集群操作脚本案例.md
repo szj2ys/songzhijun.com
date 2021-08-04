@@ -1,6 +1,6 @@
 ---
 title: 大数据集群操作脚本案例
-comments: false
+comments: true
 tags:
   - shell
   - 脚本
