@@ -3,9 +3,9 @@
 ## 第一次先执行下面命令安装一些包
 # npm install hexo-deployer-git --save
 # npm install hexo-generator-search --save
-gulp  # 压缩HTML
 hexo clean
 hexo generate
+gulp  # 压缩HTML，必须在生成HTML之后压缩
 
 hexo server # 本地预览
 hexo deploy  # 部署到Git上
