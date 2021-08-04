@@ -31,10 +31,11 @@ menu:
     归档: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
+#  资讯: / || fas fa-news
   娱乐||fa fa-heartbeat:
-    # - 音乐 || /music/ || fas fa-music
-    图库: /Gallery/ || fas fa-images
-    电影: /movies/ || fas fa-video
+#    音乐: /music/ || fas fa-music
+    图库: /gallery/ || fas fa-images
+#    电影: /movies/ || fas fa-video
   留言板: /messageboard/ || fas fa-comment-dots
   链接: /link/ || fas fa-address-book
   导航: /navigate/ || fas fa-location-arrow
@@ -45,7 +46,6 @@ hide_sidebar_menu_child: false
 
 # Code Blocks (代码相关)
 # --------------------------------------
-
 highlight_theme: light # darker / pale night / light / ocean / mac / mac light /false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
@@ -65,7 +65,7 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fas fa-envelope: mailto:i@immyw.com || Email
+  fas fa-envelope: szj2ys@qq.com || Email
   fas fa-rss: /atom.xml || RSS
 
 # search (搜索)
@@ -170,7 +170,7 @@ error_img:
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: '頁面沒有找到'
+  subtitle: '停下来喝杯水吧！'
   background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
 post_meta:
@@ -185,7 +185,7 @@ post_meta:
     date_format: date # date/relative 顯示日期還是相對日期
     categories: true # true or false 文章頁是否顯示分類
     tags: true # true or false 文章頁是否顯示標籤
-    label: true # true or false 顯示描述性文字
+    label: false # true or false 顯示描述性文字
 
 # wordcount (字數統計)
 wordcount:
@@ -286,7 +286,7 @@ sharejs:
 # AddToAny
 # https://www.addtoany.com/
 addtoany:
-  enable: false
+  enable: true
   item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
 # Comments System
@@ -296,9 +296,7 @@ comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo
   use:
-#    - Valine
-#    - Disqusjs
-    - Waline
+    - Disqusjs
   text: false # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
@@ -501,14 +499,13 @@ ad:
 
 # Verification (站長驗證)
 # --------------------------------------
-
 site_verification:
   - name: google-site-verification
-    content: NdIUXAOVyGnnBhcrip0ksCawbdAzT0hlBZDE9u4jx6k
+    content: NdIUXAOVyGnnBhcrip0sksCawbdAzT0hlBZDE9u4jx6k
   - name: msvalidate.01
-    content: 567E47D75E8DCF1282B9623AD914701E
+    content: 567E47D75E8DCF128d2B9623AD914701E
   - name: baidu-site-verification
-    content: code-pE5rnuxcfD
+    content: code-pE5rnuxcefD
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
@@ -630,8 +627,8 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
-  global-font-size:
-  code-font-size:
+  global-font-size: 18px
+  code-font-size: 14px
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
   code-font-family: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
 
@@ -661,13 +658,13 @@ subtitle:
   # source: 3  調用一句網（簡體） http://yijuzhan.com/
   # source: 4  調用今日詩詞（簡體） https://www.jinrishici.com/
   # subtitle 會先顯示 source , 再顯示 sub 的內容
-  source: 2
+  source: false
   # 如果有英文逗號' , ',請使用轉義字元 &#44;
   # 如果有英文雙引號' " ',請使用轉義字元 &quot;
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
-    - 今日事&#44;今日毕
+    - 从来没有真正的绝境&#44;只有心灵的迷途
     - Never put off till tomorrow what you can do today
 
 # Loading Animation (加載動畫)
@@ -675,7 +672,6 @@ preloader: true
 
 # aside (側邊欄)
 # --------------------------------------
-
 aside:
   enable: true
   hide: false
@@ -725,7 +721,7 @@ aside:
     sort_order: # Don't modify the setting unless you know how it works
 
 # busuanzi count for PV / UV in site
-# 訪問人數
+# 访问统计
 busuanzi:
   site_uv: true
   site_pv: true
@@ -785,7 +781,7 @@ darkmode:
 
 # medium-zoom
 # https://github.com/francoischalifour/medium-zoom
-medium_zoom: false
+medium_zoom: true
 
 # fancybox
 # http://fancyapps.com/fancybox/3/
@@ -822,7 +818,7 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: true
+  enable: false
   exclude:
     - /talking/
 
@@ -883,6 +879,8 @@ css_prefix: true
 inject:
   head:
     - '<style type="text/css">.card-announcement .social-button{margin: .6rem 0 0 0; text-align: center;}.card-announcement .social-button a{display: block; margin: 0.2rem 0;background-color: var(--btn-bg); color: var(--btn-color); line-height: 1.6rem; transition: all .3s; position: relative; z-index: 1;}</style>'
+    - '<link rel="preconnect" href="https://fonts.gstatic.com">'
+    - '<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap" rel="stylesheet">'
     - '<script data-ad-client="ca-pub-1902923403139213" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
   bottom:
     - '<script data-ad-client="ca-pub-1902923403139213" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
