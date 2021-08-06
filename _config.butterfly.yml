@@ -32,9 +32,9 @@ menu:
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
 #  资讯: / || fas fa-news
-  娱乐||fa fa-heartbeat:
+#  娱乐||fa fa-heartbeat:
 #    音乐: /music/ || fas fa-music
-    图库: /Gallery/ || fas fa-images
+#    图库: /Gallery/ || fas fa-images
 #    电影: /movies/ || fas fa-video
 #  留言板: /messageboard/ || fas fa-comment-dots
   链接: /link/ || fas fa-address-book
