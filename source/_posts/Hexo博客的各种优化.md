@@ -51,7 +51,7 @@ top_img:
 ```
 
 你也可以在`_config.butterfly.yml`文件找到 `head:`，添加下面的链接
-```
+```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
 ```
 
