@@ -19,10 +19,6 @@
       link: https://www.songzhijun.com/dashio/
       avatar: https://www.songzhijun.com/dashio/img/ui-sam.jpg
       descr: 一个展示dash图表的网页模板
-    - name: Butterfly
-      link: https://github.com/jerryc127/hexo-theme-butterfly
-      avatar: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-github-avatar.png
-      descr: '🦋 A Hexo Theme: Butterfly'
 
 - class_name: '<i class="fas fa-fan" style="color:#00cccc;padding-right: 0.4rem"></i>友情链接'
   class_desc: '<span style="font-style: italic;">最可爱的朋友在这儿</span>'
