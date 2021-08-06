@@ -36,7 +36,7 @@ menu:
 #    音乐: /music/ || fas fa-music
     图库: /Gallery/ || fas fa-images
 #    电影: /movies/ || fas fa-video
-  留言板: /messageboard/ || fas fa-comment-dots
+#  留言板: /messageboard/ || fas fa-comment-dots
   链接: /link/ || fas fa-address-book
   导航: /navigate/ || fas fa-location-arrow
   关于我: /about/ || fas fa-user-circle
@@ -65,8 +65,8 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fas fa-envelope: szj2ys@qq.com || Email
-  fas fa-rss: /atom.xml || RSS
+#  fas fa-envelope: szj2ys@qq.com || Email
+#  fa fa-weixin: iSongzj || Wechat
 
 # search (搜索)
 # --------------------------------------
