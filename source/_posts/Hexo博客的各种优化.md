@@ -43,16 +43,19 @@ top_img:
       .copyright!= `&copy;${nowYear + '  '} <i id="heartbeat" style="color:#FF6A6A" class="fa fa-heartbeat"></i> ${config.author}`
 ```
 这时候你的页脚就有一个红心了，但是你会发现这颗心没有灵魂，因为它不会跳动，如果你还想要这颗心跳动，那还需要加点佐料
-在`_config.butterfly.yml`文件找到 `head:`，添加下面的链接
-```
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
-```
 
-你也可以直接把这段代码插入到的最下方
+直接把这段代码插入到最下方
 
 ```javascript
 <head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head>
 ```
+
+你也可以在`_config.butterfly.yml`文件找到 `head:`，添加下面的链接
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
+```
+
+
 好啦，你的小红心就跳动起来了
 
 ## 新建文章自动在编辑器里打开
