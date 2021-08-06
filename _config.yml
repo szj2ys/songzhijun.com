@@ -142,7 +142,7 @@ deploy:
     github: https://github.com/szj2ys/szj2ys.github.io.git
 #    - https://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@github.com/iszj/iszj.github.io.git
 #    gitee: xxx
-#     coding: xxx
+     coding: https://iszj.coding.net/p/iszj
   branch: master
   # other deployer
 
