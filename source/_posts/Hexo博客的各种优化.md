@@ -38,9 +38,9 @@ top_img:
     - var now = new Date()
     - var nowYear = now.getFullYear()
     if theme.footer.owner.since && theme.footer.owner.since != nowYear
-      .copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} <i id="heartbeat" style="color:#FF6A6A" class="fa fa-heartbeat"></i> ${config.author}`
+      .copyright!= `&copy;${theme.footer.owner.since} - ${nowYear} <i id="heartbeat" style="color:#FF6A6A" class="fa fa-heartbeat"> </i> ${config.author}`
     else
-      .copyright!= `&copy;${nowYear} <i id="heartbeat" style="color:#FF6A6A" class="fa fa-heartbeat"></i> ${config.author}`
+      .copyright!= `&copy;${nowYear} <i id="heartbeat" style="color:#FF6A6A" class="fa fa-heartbeat"> </i> ${config.author}`
 ```
 
 然后在`_config.butterfly.yml`文件找到 `head:`，添加下面的链接
