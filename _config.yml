@@ -140,9 +140,9 @@ deploy:
   type: git
   repo:
     github: https://github.com/szj2ys/szj2ys.github.io.git
-#    - https://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@github.com/iszj/iszj.github.io.git
-#    gitee: xxx
-     coding: https://iszj.coding.net/p/iszj
+#    coding: https://iszj.coding.net/p/iszj
+  #    - https://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@github.com/iszj/iszj.github.io.git
+  #    gitee: xxx
   branch: master
   # other deployer
 

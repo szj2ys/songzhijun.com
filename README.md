@@ -1,16 +1,6 @@
 ## songzhijun.com
 
-
-#第一个账号，默认使用的账号，不用做任何更改
-Host szj2ys.github.com
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/szj2ys_rsa
-#第二个新账号，#"xxxxxx"为前缀名，可以任意设置，要记住，后面需要用到
-Host iszj.github.com
-    HostName github.com
-    User git
-    IdentityFile ~/.ssh/iszj_rsa
+阿酷网址导航：https://www.a.cool/#9
 
 
 這是 我的个人博客网站 hexo 主題 Butterfly 的文件/ Demo 倉庫
