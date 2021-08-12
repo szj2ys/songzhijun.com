@@ -1,5 +1,7 @@
 ## songzhijun.com
 
+备用网站地址：https://iszj.github.io
+
 阿酷网址导航：https://www.a.cool/#9
 
 
