@@ -14,6 +14,7 @@ top_img:
 ---
 
 
+### 说明
 用Github绑定域名后博客网站有时会挂掉，还是原生的稳定些，因为一个Github账号只能部署一个Github Pages，所以就想把博客部署在不同的Github。
 但是电脑只能有一个Github作为默认账号，用非默认账号提交代码会出现`Permission denied`错误。
 那要怎么实现多个Github同时存在呢？
@@ -92,7 +93,7 @@ git push --set-upstream origin master
 ```
 两个Github就完美的融合在你的电脑了
 
-
+### 解决问题
 最后，再来解决一下我们的需求，把博客部署在多个`Github Pages`
 在`hexo`部署博客的时候配置一下`_config.yml`
 
