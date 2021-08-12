@@ -139,10 +139,9 @@ theme: butterfly
 deploy:
   type: git
   repo:
-    github: https://github.com/szj2ys/szj2ys.github.io.git
-#    coding: https://iszj.coding.net/p/iszj
-  #    - https://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@github.com/iszj/iszj.github.io.git
-  #    gitee: xxx
+    - https://github.com/szj2ys/szj2ys.github.io.git
+    - git@iszj.github.com:iszj/iszj.github.io.git
+
   branch: master
   # other deployer
 
