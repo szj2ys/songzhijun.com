@@ -1,14 +1,15 @@
 ---
 title: Mac配置多个Github账号
 tags:
-  - 标签
+  - Github
+  - 教程
 categories: 教程
-keywords: ''
+keywords: 'GitHub,教程'
 cover: 'https://img2.baidu.com/it/u=1235179948,3696932210&fm=26&fmt=auto&gp=0.jpg'
 comments: true
 abbrlink: 35811c74
 date: 2021-08-12 09:52:44
-updated: 2021-08-12 09:52:44
+updated: 2021-08-13 09:52:44
 description:
 top_img:
 ---
