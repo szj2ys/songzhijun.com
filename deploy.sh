@@ -10,10 +10,6 @@ gulp  # 压缩HTML，必须在生成HTML之后压缩
 hexo server # 本地预览
 hexo deploy  # 部署到Git上
 
-git add .
-git commit -m 'xx'
-git push
-
 # hexo new "文章题目"  # 创建新文章
 # hexo new page "页面名称"  # 创建新页面
 
