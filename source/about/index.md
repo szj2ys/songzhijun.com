@@ -27,9 +27,4 @@ top_img: https://img0.baidu.com/it/u=1668282994,322823828&fm=26&fmt=auto&gp=0.jp
 
 
 
-如果你觉得和我惺惺相惜，那我们可以交个朋友，我的微信
-```
-iSongzj
-```
-
 
