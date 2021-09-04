@@ -1,16 +1,18 @@
 ---
-title: Markdown Style Examples
+title: Markdown 教程
 tags:
-  - highlight
-  - Bar
+  - Markdown
+  - 教程
+  - 语法
 categories:
   - Markdown教程
 
 abbrlink: '89757140'
-date: 2020-07-24 23:31:06
+date: 2021-07-24 23:31:06
+updated: 2021-09-04 09:15:39
 mathjax: true
-cover: https://cdn.jsdelivr.net/gh/jerryc127/CDN/img/Markdown-Style-test-cover.png
-keywords: 'hexo,butterfly,主題,doc,教程,文檔,Markdown'
+cover: https://img2.baidu.com/it/u=3787571756,1834264198&fm=26&fmt=auto&gp=0.jpg
+keywords: '教程,Markdown,语法'
 comments: true
 ---
 
@@ -26,7 +28,21 @@ This post is originated from [here](https://gist.github.com/apackeer/4159268) an
 2.两个空格的大小表示：&emsp;或&#8195;，同理，使用2个即可缩进2个汉字，推荐使用该方式。
 3.不换行空格：&nbsp;或&#160;，使用4个&#160;即可。
 
-## Headers
+
+## 公式
+
+```
+$$y_t = \tau_t + \zeta_t$$
+```
+$$y_t = \tau_t + \zeta_t$$
+
+
+```
+$$\min_{\\{ \tau_{t}\\} }\sum_{t}^{T}\zeta_{t}^{2}+\lambda\sum_{t=1}^{T}\left[\left(\tau_{t}-\tau_{t-1}\right)-\left(\tau_{t-1}-\tau_{t-2}\right)\right]^{2}$$
+```
+$$\min_{\\{ \tau_{t}\\} }\sum_{t}^{T}\zeta_{t}^{2}+\lambda\sum_{t=1}^{T}\left[\left(\tau_{t}-\tau_{t-1}\right)-\left(\tau_{t-1}-\tau_{t-2}\right)\right]^{2}$$
+
+## 标题
 
 ```markdown
 # H1
@@ -62,7 +78,7 @@ Alt-H2
 ------
 
 
-## Emphasis
+## 强调
 
 ```markdown
 Emphasis, aka italics, with *asterisks* or _underscores_.
@@ -83,7 +99,7 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 
 
-## Lists
+## 列表
 
 ```markdown
 1. First ordered list item
@@ -133,7 +149,7 @@ And more text.
 Common Paragraph with some text.
 And more text.
 
-## Inline HTML
+## 嵌入 HTML
 
 ```markdown
 <p>To reboot your computer, press <kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>del</kbd>.</p>
@@ -162,93 +178,7 @@ And more text.
 </dl>
 
 
-## Links
-
-```markdown
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself]
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://hexo.io
-[1]: https://hexo.io/docs/
-[link text itself]: https://hexo.io/api/
-```
-
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][Arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself]
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://hexo.io
-[1]: https://hexo.io/docs/
-[link text itself]: https://hexo.io/api/
-
-## Images
-
-```markdown
-hover to see the title text:
-
-Inline-style:
-
-![alt text](https://hexo.io/icon/favicon-196x196.png "Logo Title Text 1")
-
-Reference-style:
-![alt text][logo]
-
-[logo]: https://hexo.io/icon/favicon-196x196.png "Logo Title Text 2"
-```
-
-hover to see the title text:
-
-Inline-style:
-
-![alt text](https://hexo.io/icon/favicon-196x196.png "Logo Title Text 1")
-
-Reference-style:
-![alt text][logo]
-
-[logo]: https://hexo.io/icon/favicon-196x196.png "Logo Title Text 2"
-
-## Code and Syntax Highlighting
-
-Inline `code` has `back-ticks around` it.
-
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-```python
-s = "Python syntax highlighting"
-print s
-```
-
-```
-No language indicated, so no syntax highlighting.
-But let's throw in a <b>tag</b>.
-```
-
-## Tables
+## 表
 
 ```markdown
 |                |ASCII                          |HTML                         |
@@ -300,7 +230,7 @@ Markdown | Less | Pretty
 > You can find more information about **LaTeX** mathematical expressions [here](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
 
 
-## Blockquotes
+## 引用
 
 > Blockquotes are very handy in email to emulate reply text.
 > This line is part of the same quote.
@@ -309,7 +239,7 @@ Quote break.
 
 > This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can *put* **Markdown** into a blockquote.
 
-## Horizontal Rule
+## 水平线
 
 Three or more...
 
@@ -340,7 +270,7 @@ ___
 Underscores
 
 
-## Line Breaks
+## 分割线
 
 ```markdown
 Here's a line for us to start with.
@@ -383,7 +313,74 @@ This is a regular paragraph.
 
 This is another regular paragraph.
 
-## Youtube videos
+## 链接
+
+```markdown
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself]
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://hexo.io
+[1]: https://hexo.io/docs/
+[link text itself]: https://hexo.io/api/
+```
+
+[I'm an inline-style link](https://www.google.com)
+
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+
+[I'm a reference-style link][Arbitrary case-insensitive reference text]
+
+[I'm a relative reference to a repository file](../blob/master/LICENSE)
+
+[You can use numbers for reference-style link definitions][1]
+
+Or leave it empty and use the [link text itself]
+
+Some text to show that the reference links can follow later.
+
+[arbitrary case-insensitive reference text]: https://hexo.io
+[1]: https://hexo.io/docs/
+[link text itself]: https://hexo.io/api/
+
+## 图片
+
+```markdown
+hover to see the title text:
+
+Inline-style:
+
+![alt text](https://hexo.io/icon/favicon-196x196.png "Logo Title Text 1")
+
+Reference-style:
+![alt text][logo]
+
+[logo]: https://hexo.io/icon/favicon-196x196.png "Logo Title Text 2"
+```
+
+hover to see the title text:
+
+Inline-style:
+
+![alt text](https://hexo.io/icon/favicon-196x196.png "Logo Title Text 1")
+
+Reference-style:
+![alt text][logo]
+
+[logo]: https://hexo.io/icon/favicon-196x196.png "Logo Title Text 2"
+
+
+## 视频
 
 ```markdown
 <a href="https://www.youtube.com/watch?feature=player_embedded&v=ARted4RniaU
@@ -402,4 +399,28 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 Pure markdown version:
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ARted4RniaU/0.jpg)](https://www.youtube.com/watch?v=ARted4RniaU)
+
+## 代码和语法高亮
+
+Inline `code` has `back-ticks around` it.
+
+
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
+
+```python
+s = "Python syntax highlighting"
+print s
+```
+
+```
+No language indicated, so no syntax highlighting.
+But let's throw in a <b>tag</b>.
+```
+
+
+
+
 
