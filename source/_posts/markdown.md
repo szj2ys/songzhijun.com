@@ -8,17 +8,15 @@ categories:
   - Markdown教程
 
 abbrlink: '89757140'
-date: 2021-07-24 23:31:06
-updated: 2021-09-04 09:15:39
+date: 2021-09-04 23:31:06
+updated: 2021-09-05 09:15:39
 mathjax: true
 cover: https://img2.baidu.com/it/u=3787571756,1834264198&fm=26&fmt=auto&gp=0.jpg
 keywords: '教程,Markdown,语法'
 comments: true
 ---
 
-This post is originated from [here](https://gist.github.com/apackeer/4159268) and is used for testing markdown style. This post contains nearly every markdown usage. Make sure all the markdown elements below show up correctly.
 
-<!-- more -->
 
 -------
 
@@ -420,6 +418,8 @@ No language indicated, so no syntax highlighting.
 But let's throw in a <b>tag</b>.
 ```
 
+<!-- more -->
+This post is originated from [here](https://gist.github.com/apackeer/4159268) and is used for testing markdown style. This post contains nearly every markdown usage. Make sure all the markdown elements below show up correctly.
 
 
 
