@@ -334,6 +334,9 @@ pyinstaller -w 文件.py # 去掉控制台窗口，对于执行文件没有多�
 pyinstaller -i 图标路径 # 表示可执行文件的图标
 pyinstaller -c # 使用控制台无窗口
 pyinstaller -D # 生成一个文件夹包括依赖文件
-pyinstaller -p # 添加Python使用的第三方库
 pyinstaller -K # 当包含tcl和tk也就是使用tkinter时加上-K参数
 ```
+
+## REFERENCES
+- [Pyinstaller 打包发布经验总结](https://blog.csdn.net/weixin_42052836/article/details/82315118?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link)
+- [py2app](https://github.com/szj2ys/py2app)
