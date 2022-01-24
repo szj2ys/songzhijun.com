@@ -2,9 +2,8 @@
 title: Transforme详解
 tags:
   - Transformer
-keywords: Transformer、预训练模型
+keywords: 'Transformer、预训练模型'
 comments: true
-abbrlink: 55aaffd6
 date: 2022-01-24 20:40:46
 updated: 2022-01-24 20:40:46
 categories:
@@ -29,7 +28,7 @@ cover:
 其中， Feed Forward和Linear是神经网络的基本操作全连接层，Add & Norm以及延伸出来的一条侧边也是一个常见的神经网络结构残差连接
 
 
-## attention
+## Attention
 
 attention说白了就是权重计算和加权求和。图上的循环神经网络中的每一步都会输出一个向量，在预测目标语言到某一步时，用当前步的向量去和源语言中的每一步的向量去做内积，然后经过softmax得到归一化后的权重，再用权重去把源语言上的每一步的向量去做加权平均。然后做预测的时候也作为输入进入全连接层
 
