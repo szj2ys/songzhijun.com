@@ -1,5 +1,5 @@
 ---
-title: Transforme详解
+title: Transformer详解
 tags:
   - Transformer
 keywords: 'Transformer、预训练模型'
@@ -39,14 +39,35 @@ attention说白了就是权重计算和加权求和。图上的循环神经网�
 Multi-Head Attention是由多个Scaled Dot-Product Attention的函数组合而成的。
 Scaled Dot-Product Attention的计算公式如下：
 
-![](https://img-blog.csdnimg.cn/20200829000047826.png#pic_center)
+<!--![](https://img-blog.csdnimg.cn/20200829000047826.png#pic_center)-->
+$$Attention(Q,,K,V)=softmax(\frac {QK^{T}}{\sqrt{d_k}})V$$
+
+### 为什么要除以$\sqrt{d_k}$
 
 首先计算q和k的点乘，然后除以 $\sqrt{d_k}$，经过softmax得到V上的权重分布，最后通过点乘计算V的加权值。这里$d_k$是K的维度，除以$\sqrt{d_k}$的原因是Q与K的转置相乘了，值会变大
 
 首先我们看下原论文的解释：We suspect that for large values of dk, the dot products grow large in magnitude, pushing the softmax function into regions where it has extremely small gradients . To counteract this effect, we scale the dot products by 1/√dk .
 
-原文说，因为加上softmax以后，会将推向小梯度范畴，导致于无法快速更新参数
+原文说，他们怀疑当key的维度过大的时候去做点乘值会变得很大，导致softmax函数的梯度异常的小，导致于无法快速更新参数。
 
+我们也可以直观的来讲：
+
+假设我们输入一个token长度为2的句子，key的维度为4，然后我们现在有query和key的在两个位置的点积，假设两个点积为`[4,9]`，我们softmax可以得到`[0.0067, 0.9933]`
+
+```python
+a = torch.tensor([4,9],dtype=torch.float64)
+a.softmax(-1)
+output；tensor([0.0067, 0.9933], dtype=torch.float64)
+```
+softmax后权重直接是99%了，如果我们除4后[1,2.25]，权重变成`[0.2227, 0.7773]`
+```python
+a = torch.tensor([1,2.25],dtype=torch.float64)
+a.softmax(-1)
+output；tensor([0.2227, 0.7773], dtype=torch.float64)
+```
+这样的话attention就不会只关注一个词汇，而是可以看到整句话的面貌分布。
+
+### 对Q、K、V的理解
 
 通俗的理解：
 

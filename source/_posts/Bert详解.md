@@ -68,6 +68,15 @@ cover:
 解决的办法就是不让模型意识到有这个任务的存在，具体做法就是在所有Mask的词语中，有80%的词语继续用[Mask]特殊词语，有10%用其他词语随机替换，有10%的概率保持不变。这样，模型就不知道当前句子中有没[Mask]的词语了。
 
 
+我们知道80%[mask]是为了让bert获得双向语言的语义表征，但是为什么还有另外20%的情况被另外处理，为啥？
+原论文说如果100%mask会导致training见不到某些token而对fine-tuning阶段也有影响，所以肯定不能全都做mask。
+
+为什么有10%保持不变，就是为了解决我们前面那个问题，让模型可以看到这些词，从而降低出现没看过情况。
+
+为什么又10%用随机token，因为如果不用随机token替换一下，模型很可能已经记住那个位置应该填什么，使得模型的词汇多样性减少了，比如本来可以填写水果一类的词，但是只填apple。
+
+
+
 
 ### Next Sentence Prediction
 在很多下游任务中，需要判断两个句子之间的关系，比如QA问题，需要判断一个句子是不是另一个句子的答案，比如NLI(Natural Language Inference)问题，直接就是两个句子之间的三种关系判断。
@@ -83,4 +92,8 @@ cover:
 
 - [原生Bert的训练和使用总结](https://blog.csdn.net/BmwGaara/article/details/107557205?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-5.pc_relevant_aa&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-5.pc_relevant_aa&utm_relevant_index=8)
 
+
+- [神经网络权重初始化为0](https://zhuanlan.zhihu.com/p/364142934)
+
+- [BERT你关注不到的点](https://zhuanlan.zhihu.com/p/242253766)
 

@@ -1,8 +1,8 @@
 ---
 title: Roberta详解
 tags:
-  - 标签
-keywords: ''
+  - Roberta
+keywords: 'Roberta'
 comments: true
 date: 2022-01-24 20:55:08
 updated: 2022-01-24 20:55:08
@@ -18,7 +18,7 @@ cover:
 - 动态掩码。BERT 依赖随机掩码和预测 token。原版的 BERT 实现在数据预处理期间执行一次掩码，得到一个静态掩码。 而 RoBERTa 
   使用了动态掩码：每次向模型输入一个序列时都会生成新的掩码模式。这样，在大量数据不断输入的过程中，模型会逐渐适应不同的掩码策略，学习不同的语言表征。 
   
-- 文本编码。不管是GPT还是Bert，都是用的BPE的编码方式，BPE是Byte-Pair Encoding的简称，是介于字符和词语之间的一个表达方式，比如hello，可能会被拆成“he”, “ll”, “o”, 其中BPE的字典是从语料中统计学习到的。
+- 文本编码。不管是GPT还是Bert，都是用的BPE的编码方式，BPE是Byte-Pair Encoding的简称，是介于字符和词语之间的一个表达方式，比如hello，可能会被拆成“he”, “ll”, “o”, 其中BPE的字典是从语料中统计学习到的。是用以解决OOV（out of vocab）问题的算法。
 原始Bert中，采用的BPE字典是30k， Roberta中增大到了50K，相对于Bertbase和Bertlarge会增加15M/20M的参数。
 
 - 大语料与更长的训练步数
@@ -61,6 +61,9 @@ batch_size太小导致网络收敛不稳定，最后结果比较差。而batch_s
 
 ## REFERENCES
 - [Roberta: Bert调优](https://blog.csdn.net/stdcoutzyx/article/details/108883085?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0.queryctrv2&spm=1001.2101.3001.4242.1&utm_relevant_index=3)
+
+
+
 
 
 
