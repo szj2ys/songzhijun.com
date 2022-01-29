@@ -1,7 +1,8 @@
 ---
 title: crontab教程
 tags:
-  - 标签
+  - crontab
+  - 教程
 categories: 教程
 keywords: ''
 cover: 'https://img0.baidu.com/it/u=3865956923,1416620645&fm=26&fmt=auto&gp=0.jpg'

@@ -1,7 +1,9 @@
 ---
 title: Markdown数学公式教程
 tags:
-  - 标签
+  - Markdown
+  - 教程
+  - 数学公式
 keywords: ''
 comments: true
 cover: 'https://img1.baidu.com/it/u=3677495509,4089642876&fm=253'
