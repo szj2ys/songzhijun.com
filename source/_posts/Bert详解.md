@@ -4,12 +4,11 @@ tags:
   - Bert
 keywords: 'Bert,预训练模型'
 comments: true
-abbrlink: f06b97c0
 date: 2022-01-24 20:50:06
 updated: 2022-01-24 20:50:06
 categories:
 description:
-top_img:
+top_img: https://img1.baidu.com/it/u=137246240,1680214152&fm=253&fmt=auto&app=138&f=JPEG?w=801&h=500
 cover:
 ---
 
