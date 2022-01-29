@@ -2,8 +2,9 @@
 title: Transformer详解
 tags:
   - Transformer
-keywords: 'Transformer、预训练模型'
+keywords: Transformer、预训练模型
 comments: true
+abbrlink: c2ac91e1
 date: 2022-01-24 20:40:46
 updated: 2022-01-24 20:40:46
 categories:
@@ -118,4 +119,6 @@ output；tensor([0.2227, 0.7773], dtype=torch.float64)
 
 
 - [关于bert中softmax前除以维度d的理解](https://zhuanlan.zhihu.com/p/367120088)
+
+- [Hugging Face的BERT源码框架图文详解](https://zhuanlan.zhihu.com/p/189717114)
 
