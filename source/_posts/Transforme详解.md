@@ -2,14 +2,15 @@
 title: Transformer详解
 tags:
   - Transformer
-keywords: 'Transformer、预训练模型'
+keywords: Transformer、预训练模型
 comments: true
+top_img: 
+abbrlink: c2ac91e1
 date: 2022-01-24 20:40:46
 updated: 2022-01-24 20:40:46
 categories:
 description:
-top_img: https://img1.baidu.com/it/u=2878985419,3213940956&fm=253&fmt=auto&app=138&f=JPEG?w=1194&h=500
-cover:
+cover: https://img1.baidu.com/it/u=2878985419,3213940956&fm=253&fmt=auto&app=138&f=JPEG?w=1194&h=500
 ---
 
 
