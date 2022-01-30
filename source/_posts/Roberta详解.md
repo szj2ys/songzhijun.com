@@ -2,14 +2,16 @@
 title: Roberta详解
 tags:
   - Roberta
-keywords: 'Roberta'
+keywords: Roberta
 comments: true
+cover: >-
+  https://img0.baidu.com/it/u=2669988648,2791754037&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500
+abbrlink: b1946a71
 date: 2022-01-24 20:55:08
 updated: 2022-01-24 20:55:08
 categories:
 description:
-top_img: 
-cover: https://img0.baidu.com/it/u=2669988648,2791754037&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500
+top_img:
 ---
 
 ## roberta三个训练改进：
@@ -61,6 +63,8 @@ batch_size太小导致网络收敛不稳定，最后结果比较差。而batch_s
 
 ## REFERENCES
 - [Roberta: Bert调优](https://blog.csdn.net/stdcoutzyx/article/details/108883085?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0.queryctrv2&spm=1001.2101.3001.4242.1&utm_relevant_index=3)
+
+- [BERT与其他预训练模型](https://zhuanlan.zhihu.com/p/101610592)
 
 
 

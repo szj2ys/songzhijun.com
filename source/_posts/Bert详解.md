@@ -18,7 +18,27 @@ cover: https://img1.baidu.com/it/u=137246240,1680214152&fm=253&fmt=auto&app=138&
 
 双向Transformer编码表达，其中双向指的是attention矩阵中，每个字都包含前后所有字的信息。
 
+## 模型结构
+Bert依然是依赖Transformer模型结构，我们知道GPT采用的是Transformer中的Decoder部分的模型结构，当前位置只能attend到之前的位置。而Bert中则没有这样的限制，因此它是用的Transformer的Encoder部分。
 
+而Transformer是由一个一个的block组成的，其主要参数如下：
+
+L: 多少个block
+H: 隐含状态尺寸，不同block上的隐含状态尺寸一般相等，这个尺寸单指多头注意力层的尺寸，有一个惯例就是在Transformer Block中全连接层的尺寸是多头注意力层的4倍。所以指定了H相当于是把Transformer Block里的两层隐含状态尺寸都指定了。
+A: 多头注意力的头的个数
+有了这几个参数后，就可以定义不同配置的模型了，Bert中定义了两个模型，
+BertBase和BertLarge。其中：
+
+BertBase: L=12, H=768, A=12, 参数量110M。
+BertLarge: L=24, H=1024, A=16, 参数量340M。
+
+输入输出
+为了让Bert能够处理下游任务，Bert的输入是两个句子，中间用分隔符分开，在开头加一个特殊的用于分类的字符。即Bert的输入是: [CLS] sentence1 [SEP] sentence2。
+
+其中，两个句子对应的词语对应的embedding还要加上位置embedding和标明token属于哪个句子的embedding。如下图所示：
+![](https://img-blog.csdnimg.cn/20200928234410935.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpbnpoYW5neWFueGlhbmc=,size_16,color_FFFFFF,t_70#pic_center)
+在[CLS]上的输出我们认为是输入句子的编码。
+输入最长是512。
 
 ## Bert的训练数据生成和解读
 用于训练的文本材料是以行排列的句子。
@@ -97,4 +117,9 @@ cover: https://img1.baidu.com/it/u=137246240,1680214152&fm=253&fmt=auto&app=138&
 - [神经网络权重初始化为0](https://zhuanlan.zhihu.com/p/364142934)
 
 - [BERT你关注不到的点](https://zhuanlan.zhihu.com/p/242253766)
+
+- [一文读懂BERT中的WordPiece](https://www.cnblogs.com/huangyc/p/10223075.html)
+
+
+
 
