@@ -26,7 +26,7 @@ top_img:
 
 二，从embedding层参数最大的word embedding下手，原来word embedding的参数是
 
-$$word\_num*embedding\_dim$$
+$$word_{num}*embedding_{dim}$$
 
 记为$V*H$，这里用$H$因为encoder要保持向量为$H$的大小，下面进行参数减少改造，仅需通过一个低维空间$E$作为中转，由$V*H$变为$V*E+E*H$
 

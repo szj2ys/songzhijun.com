@@ -10,7 +10,8 @@ date: 2022-01-24 20:40:46
 updated: 2022-01-24 20:40:46
 categories:
 description:
-cover: https://img1.baidu.com/it/u=2878985419,3213940956&fm=253&fmt=auto&app=138&f=JPEG?w=1194&h=500
+cover: https://img1.baidu.com/it/u=2878985419,3213940956&fm=253
+sticky: 99
 ---
 
 
@@ -41,7 +42,7 @@ Multi-Head Attention是由多个Scaled Dot-Product Attention的函数组合而�
 Scaled Dot-Product Attention的计算公式如下：
 
 <!--![](https://img-blog.csdnimg.cn/20200829000047826.png#pic_center)-->
-$$Attention(Q,,K,V)=softmax(\frac {QK^{T}}{\sqrt{d_k}})V$$
+$$Attention(Q,K,V)=softmax(\frac {QK^{T}}{\sqrt{d_k}})V$$
 
 ### 为什么要除以$\sqrt{d_k}$
 

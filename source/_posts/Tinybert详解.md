@@ -1,11 +1,11 @@
 ---
-title: Tinybert详解
+title: TinyBert详解
 tags:
   - 标签
 keywords: ''
 cover: 'https://img2.baidu.com/it/u=507580163,2809643925&fm=253'
 comments: true
-abbrlink: 7ecac2f1
+abbrlink: 3197c121
 date: 2022-01-30 11:28:39
 updated: 2022-01-30 11:28:39
 categories:
@@ -14,10 +14,14 @@ top_img:
 ---
 
 
-BERT 等大模型性能强大，但很难部署到算力、内存有限的设备中。为此，来自华中科技大学、华为诺亚方舟实验室的研究者提出了 TinyBert，这是一种为基于 transformer 的模型专门设计的知识蒸馏方法，模型大小还不到 BERT 的 1/7，但速度是 BERT 的 9 倍还要多，而且性能没有出现明显下降
+BERT 等大模型性能强大，但很难部署到算力、内存有限的设备中。为此，来自华中科技大学、华为诺亚方舟实验室的研究者提出了 TinyBert，这是为基于 transformer 的模型专门设计的知识蒸馏（knowledge distillation，KD）方法。通过这种新的 KD 方法，大型 teacherBERT 模型中编码的大量知识可以很好地迁移到小型 student TinyBert模型中。模型大小还不到 BERT 的 1/7，但速度是 BERT 的 9 倍还要多，而且性能没有出现明显下降。
 
-TinyBERT 的结构如下图：
-![](https://pic4.zhimg.com/v2-4c4c0b519fb52f2c17e12711ee4ebf1f_r.jpg)
+TinyBert 的结构如下图：
+![](https://pics1.baidu.com/feed/91529822720e0cf3056ddb2f4c667a1abf09aa76.jpeg)
+在TinyBert中，student 和 teacher 网络都是通过 Transformer 层构建的。
+此外，研究者还提出了一种专门用于 TinyBERT 的两段式学习框架，从而分别在预训练和针对特定任务的学习阶段执行 transformer 蒸馏。这一框架确保 TinyBert 可以获取 teacherBERT 的通用知识和针对特定任务的知识。
+
+除了提出新的 transformer 蒸馏法之外，研究者还提出了一种专门用于 TinyBERT 的两段式学习框架，从而分别在预训练和针对特定任务的具体学习阶段执行 transformer 蒸馏。这一框架确保 TinyBERT 可以获取 teacherBERT 的通用和针对特定任务的知识。
 
 ## BERT模型的瘦身方法
 ### 1) 网络剪枝：
@@ -108,4 +112,6 @@ T即蒸馏温度。当T=1时，该式即是正常的Softmax公司。随着T越�
 - [Bert模型压缩(蒸馏|剪枝|量化)小记](https://zhuanlan.zhihu.com/p/282777488)
 
 - [BERT 模型的知识蒸馏： DistilBERT 方法的理论和机制研究](https://zhuanlan.zhihu.com/p/444629182)
+
+- [TinyBERT：模型小7倍，速度快8倍，华中科大、华为出品](https://baijiahao.baidu.com/s?id=1646220794556507928&wfr=spider&for=pc)
 

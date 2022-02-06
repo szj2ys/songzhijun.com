@@ -12,13 +12,13 @@
   class_desc: '<span style="font-style: italic;">重要的事情説一遍</span>'
   link_list:
     - name: WiseQuotes
-      link: https://www.songzhijun.com/wisequotes/
+      link: https://wisequotes.vercel.app
       avatar: https://immyw.com/img/avatar.png
       descr: 智慧格言
-    - name: Dashio
-      link: https://www.songzhijun.com/dashio/
-      avatar: https://www.songzhijun.com/dashio/img/ui-sam.jpg
-      descr: 一个展示dash图表的网页模板
+    - name: algorithms
+      link: https://algorithms-szj2ys.vercel.app
+      avatar: https://gitee.com/szj2ys/Pictures/raw/master/logo/algorithms_icon.svg
+      descr: 算法与数据结构
 
 - class_name: '<i class="fas fa-fan" style="color:#00cccc;padding-right: 0.4rem"></i>友情链接'
   class_desc: '<span style="font-style: italic;">最可爱的朋友在这儿</span>'
