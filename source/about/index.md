@@ -23,7 +23,7 @@ top_img: https://img0.baidu.com/it/u=1668282994,322823828&fm=26&fmt=auto&gp=0.jp
 
 
 
-![](./code.gif)
+![](https://cdn.jsdelivr.net/gh/szj2ys/cdn/gifs/code.gif)
 
 
 
