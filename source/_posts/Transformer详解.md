@@ -16,7 +16,7 @@ sticky: 99
 
 
 
-![](https://img-blog.csdnimg.cn/20200829000007683.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpbnpoYW5neWFueGlhbmc=,size_16,color_FFFFFF,t_70#pic_center)
+![](https://cdn.jsdelivr.net/gh/szj2ys/cdn/resources/transformer.jpg)
 
 左边处理源语言，称之为Encoder，右边处理目标语言，被称为Decoder，分别由N个Block组成。然后每个block都有这么几个模块：
 
@@ -36,7 +36,7 @@ attention说白了就是权重计算和加权求和。图上的循环神经网�
 
 ### Multi-Head Attention
 
-![](https://img-blog.csdnimg.cn/20200829000027768.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpbnpoYW5neWFueGlhbmc=,size_16,color_FFFFFF,t_70#pic_center)
+![](https://cdn.jsdelivr.net/gh/szj2ys/cdn/resources/transformer_multihead_attention.jpg)
 
 Multi-Head Attention是由多个Scaled Dot-Product Attention的函数组合而成的。
 Scaled Dot-Product Attention的计算公式如下：
@@ -44,11 +44,14 @@ Scaled Dot-Product Attention的计算公式如下：
 <!--![](https://img-blog.csdnimg.cn/20200829000047826.png#pic_center)-->
 $$Attention(Q,K,V)=softmax(\frac {QK^{T}}{\sqrt{d_k}})V$$
 
+Q、K、V的维度均为`[batch_size, seq_len, emb_dim]`
+
 ### 为什么要除以$\sqrt{d_k}$
+
 
 首先计算q和k的点乘，然后除以 $\sqrt{d_k}$，经过softmax得到V上的权重分布，最后通过点乘计算V的加权值。这里$d_k$是K的维度，除以$\sqrt{d_k}$的原因是Q与K的转置相乘了，值会变大
 
-首先我们看下原论文的解释：We suspect that for large values of dk, the dot products grow large in magnitude, pushing the softmax function into regions where it has extremely small gradients . To counteract this effect, we scale the dot products by 1/√dk .
+首先我们看下原论文的解释：We suspect that for large values of dk, the dot products grow large in magnitude, pushing the softmax function into regions where it has extremely small gradients . To counteract this effect, we scale the dot products by $\frac{1}{\sqrt{d_k}}$
 
 原文说，他们怀疑当key的维度过大的时候去做点乘值会变得很大，导致softmax函数的梯度异常的小，导致于无法快速更新参数。
 
@@ -92,6 +95,10 @@ output；tensor([0.2227, 0.7773], dtype=torch.float64)
 
 之所以需要mask，是因为在目标语言上，每一步是预测下一个词，所以在预测下一个词的时候不能让模型看到下一个词以及之后的信息，所以在处理目标语言的时候需要对attention做mask，attention本来是一个二维矩阵，即每个位置对每个位置的权重，做了mask后就相当于强制一半的值（二维矩阵的右上三角）为0。这就是mask的含义。
 
+### 全连接层的作用
+
+全连接层不仅可以变换维度，更重要的是如果没有全连接层，他们模型只会有self-attention层出来的一些线性组合，表达能力有限，而全连接层可以自己学习复杂的特征表达，并且激活函数能提供非线性。
+
 ## Encoder和Decoder
 
 问：Encoder和Decoder是怎么联系的呢？ 
@@ -105,7 +112,7 @@ output；tensor([0.2227, 0.7773], dtype=torch.float64)
 
 
 
-
+![](https://pic4.zhimg.com/v2-8a9556f27d87e89a54de402744d1fcbf_r.jpg)
 
 
 
