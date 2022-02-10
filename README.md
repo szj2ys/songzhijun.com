@@ -46,7 +46,7 @@ npm install
 4. 點擊下面的 `Commit changes` ，合併到 butterfly.js.org 倉庫
 
 
-决策树模型与随机森林模型、
+
 k-means 聚类、
 dbscan
 PCA 等机器学习模型;
