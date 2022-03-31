@@ -88,7 +88,7 @@ position embedding的结构为`[max sequence leghth, embedding dimension]`
 
 2. 位置向量：由于出现在文本不同位置的字/词所携带的语义信息存在差异（比如：“我爱你”和“你爱我”），因此，BERT模型对不同位置的字/词分别附加一个不同的向量以作区分
 
-最后，BERT模型将字向量、文本向量和位置向量的加和作为模型输入。特别地，在目前的BERT模型中，文章作者还将英文词汇作进一步切割，划分为更细粒度的语义单位（WordPiece），例如：将playing分割为play和##ing；此外，对于中文，目前作者尚未对输入文本进行分词，而是直接将单字作为构成文本的基本单位。
+最后，BERT模型将字向量、文本向量和位置向量的加和作为模型输入。特别地，在目前的BERT模型中，文章作者还将英文词汇作进一步切割，划分为更细粒度的语义单位（WordPiece），例如：将playing分割为play和ing；此外，对于中文，目前作者尚未对输入文本进行分词，而是直接将单字作为构成文本的基本单位。
 
 对于不同的NLP任务，模型输入会有微调，对模型输出的利用也有差异，例如：
 
@@ -170,7 +170,7 @@ Multi-head Self-Attention:为了增强Attention的多样性，文章作者进一
 
 
 ### Transformer Encoder
-在Multi-headSelf-Attention的基础上再添加一些“佐料”，就构成了大名鼎鼎的Transformer Encoder。实际上，Transformer模型还包含一个Decoder模块用于生成文本，但由于BERT模型中并未使用到Decoder模块，因此这里对其不作详述。下图展示了Transformer Encoder的内部结构，可以看到，Transformer Encoder在Multi-head Self-Attention之上又添加了三种关键操作：
+在Multi-head Self-Attention的基础上再添加一些“佐料”，就构成了大名鼎鼎的Transformer Encoder。实际上，Transformer模型还包含一个Decoder模块用于生成文本，但由于BERT模型中并未使用到Decoder模块，因此这里对其不作详述。下图展示了Transformer Encoder的内部结构，可以看到，Transformer Encoder在Multi-head Self-Attention之上又添加了三种关键操作：
 - 残差连接（ResidualConnection）：将模块的输入与输出直接相加，作为最后的输出。这种操作背后的一个基本考虑是：修改输入比重构整个输出更容易（“锦上添花”比“雪中送炭”容易多了！）。这样一来，可以使网络更容易训练。
 - Layer Normalization：对某一层神经网络节点作0均值1方差的标准化。
 - 线性转换：对每个字的增强语义向量再做两次线性变换，以增强整个模型的表达能力。这里，变换后的向量与原向量保持长度相同。

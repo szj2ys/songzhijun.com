@@ -41,8 +41,8 @@ LSTM的全称是Long Short Term Memory，顾名思义，它具有记忆长短期
 LSTM提出的动机是为了解决上面我们提到的长期依赖问题。
 LSTM之所以能够解决RNN的长期依赖问题，是因为LSTM引入了门（gate）机制用于控制特征的流通和损失。
 
-原始 RNN 的隐藏层只有一个状态，即h，它对于短期的输入非常敏感。
-再增加一个状态，即c，让它来保存长期的状态，称为单元状态(cell state)。
+原始的 RNN 只有一个隐藏层的状态，即$h$，它对于短期的输入非常敏感。
+再增加一个状态，即$c$，让它来保存长期的状态，称为单元状态(cell state)。
 ![](https://cdn.jsdelivr.net/gh/szj2ys/cdn/resources/rnn2lstm.png)
 把上图按照时间维度展开：
 ![](https://cdn.jsdelivr.net/gh/szj2ys/cdn/resources/rnn2lstm2.png)

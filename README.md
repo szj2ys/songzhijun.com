@@ -45,12 +45,14 @@ npm install
   ```
 4. 點擊下面的 `Commit changes` ，合併到 butterfly.js.org 倉庫
 
-
+# TODO
 k近邻
 k-means 聚类、
 dbscan
 PCA 等机器学习模型;
 LDA
+xgboost原理
+
 掌握 Bagging、Boosting、AdaBoost、GBDT、LightGBM 等模型融合思想
 
 
