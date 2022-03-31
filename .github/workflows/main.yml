@@ -23,18 +23,22 @@ jobs:
         # set up private key for deploy
         mkdir -p ~/.ssh/
         echo "$ACTION_DEPLOY_KEY" | tr -d '\r' > ~/.ssh/id_rsa # 配置秘钥
-        chmod 600 ~/.ssh/id_rsa
+        chmod 777 ~/.ssh/id_rsa
         ssh-keyscan github.com >> ~/.ssh/known_hosts
         # set git infomation
-        git config --global user.name 'bulabula' # 换成你自己的邮箱和名字
-        git config --global user.email 'bulabula@athorx.com'
+        git config --global user.name 'szj2ys' # 换成你自己的邮箱和名字
+        git config --global user.email '15574364821@163.com'
         # install dependencies
         npm i -g hexo-cli # 安装hexo
-        npm i
+        npm install hexo-deployer-git --save
+        npm install # 安装依赖
   
     - name: Deploy
       run: |
         # publish
-        hexo generate && hexo deploy # 执行部署程序
+        hexo clean
+        hexo generate
+        gulp  # 压缩HTML，必须在生成HTML之后压缩
+        hexo deploy # 执行部署程序
 
 
