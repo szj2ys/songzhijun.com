@@ -30,6 +30,7 @@ jobs:
         git config --global user.email '15574364821@163.com'
         # install dependencies
         npm i -g hexo-cli # 安装hexo
+        npm i hexo-theme-butterfly
         npm install hexo-deployer-git --save
         npm install # 安装依赖
         npm audit fix --force
