@@ -29,13 +29,14 @@ jobs:
         git config --global user.name 'szj2ys' # 换成你自己的邮箱和名字
         git config --global user.email '15574364821@163.com'
         # install dependencies
+        npm i yarn
         npm i -g hexo-cli # 安装hexo
         npm install expo-cli
+        npm install hexo-deployer-git
+        npm install hexo-generator-search
         npm i hexo-theme-butterfly
-        npm install hexo-deployer-git --save
-        npm install -g# 安装依赖
-        npm audit fix --force
-  
+        yarn install
+
     - name: Deploy
       run: |
         # publish
