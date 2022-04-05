@@ -30,7 +30,7 @@ jobs:
         git config --global user.email '15574364821@163.com'
         # install dependencies
         npm i yarn
-        npm install hexo-cli@6.1.0 -g
+        yarn install hexo-cli@6.1.0 -g
         yarn install
 
     - name: Deploy
