@@ -31,7 +31,7 @@ jobs:
         # install dependencies
         npm i yarn
         yarn install hexo-cli -g
-#        yarn install hexo-cli@6.1.0 -g
+        # yarn install hexo-cli@6.1.0 -g
         yarn install
 
     - name: Deploy
