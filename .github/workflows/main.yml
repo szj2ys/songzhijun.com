@@ -30,11 +30,6 @@ jobs:
         git config --global user.email '15574364821@163.com'
         # install dependencies
         npm i yarn
-        npm i -g hexo-cli # 安装hexo
-        npm install expo-cli
-        npm install hexo-deployer-git
-        npm install hexo-generator-search
-        npm i hexo-theme-butterfly
         yarn install
 
     - name: Deploy
