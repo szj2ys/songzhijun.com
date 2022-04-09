@@ -66,3 +66,10 @@ xgboost原理
 
 [阿里云域名查询](https://wanwang.aliyun.com/domain/)
 
+阿里云dns
+dns27.hichina.com
+dns28.hichina.com
+
+
+ns1.vercel-dns.com
+ns2.vercel-dns.com
