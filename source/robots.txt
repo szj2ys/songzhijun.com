@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.songzhijun.com/sitemap.xml
-Sitemap: https://www.songzhijun.com/baidusitemap.xml
+Sitemap: https://www.songzj.com/sitemap.xml
+Sitemap: https://www.songzj.com/baidusitemap.xml

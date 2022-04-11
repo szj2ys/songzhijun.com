@@ -45,6 +45,22 @@ npm install
   ```
 4. 點擊下面的 `Commit changes` ，合併到 butterfly.js.org 倉庫
 
+
+ruby:
+```shell
+gem install name_of_gem --user-install
+gem install jekyll-import --user-install
+```
+[jekyll官网](https://jekyllrb.com)
+
+
+配置环境变量
+```shell
+#jekyll
+export PATH=${PATH}:/Users/a12345/.gem/ruby/2.6.0/bin
+```
+
+
 # TODO
 k近邻
 k-means 聚类、
@@ -61,6 +77,9 @@ xgboost原理
 # TODO: [多任务之线程](https://blog.csdn.net/qq_41333582/article/details/82261541)
 
 
+[制作网站的工具合集](https://www.slant.co/versus/1006/1020/~jekyll_vs_hexo)
+
+
 
 
 
@@ -73,3 +92,5 @@ dns28.hichina.com
 
 ns1.vercel-dns.com
 ns2.vercel-dns.com
+
+
