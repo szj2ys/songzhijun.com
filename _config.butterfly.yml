@@ -308,15 +308,15 @@ comments:
 # disqus
 # https://disqus.com/
 disqus:
-  shortname: www-songzhijun-com
+  shortname: www-songzj-com
   apikey: 4v4jPIrbVnrqsIO3DAqmGhM0wr6NKBKn92j0NrbVhcmh8ZkVZ0b3amiIYAzJ56ma# For newest comments widget
 
 # Alternative Disqus - Render comments with Disqus API
 # DisqusJS 評論系統，可以實現在網路審查地區載入 Disqus 評論列表，兼容原版
 # https://github.com/SukkaW/DisqusJS
 disqusjs:
-  shortname: www-songzhijun-com
-  siteName: www.songzhijun.com
+  shortname: www-songzj-com
+  siteName: www.songzj.com
   apikey: 4v4jPIrbVnrqsIO3DAqmGhM0wr6NKBKn92j0NrbVhcmh8ZkVZ0b3amiIYAzJ56ma
   api: https://disqus.skk.moe/disqus/
   nocomment: # display when a blog post or an article has no comment attached
@@ -505,7 +505,7 @@ ad:
 # Verification (站長驗證)
 # --------------------------------------
 site_verification:
-#  https://search.google.com/search-console?resource_id=https%3A%2F%2Fwww.songzhijun.com%2F
+#  https://search.google.com/search-console?resource_id=https%3A%2F%2Fwww.songzj.com%2F
   - name: google-site-verification
     content: 9pANgEo9T-01B-QGkl4lWtWC7-ehwydH6uVvfqtfLR0
   - name: msvalidate.01
@@ -709,7 +709,7 @@ aside:
   card_announcement:
     enable: true
     content:
-       欢迎来到我的小站，<a href="https://www.songzhijun.com" style="color:#49b1f5">在下小宋</a>。
+       欢迎来到我的小站，<a href="https://www.songzj.com" style="color:#49b1f5">在下小宋</a>。
 
 
 

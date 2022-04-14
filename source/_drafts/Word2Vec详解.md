@@ -22,3 +22,4 @@ cover: https://img1.baidu.com/it/u=2781789240,2104418891&fm=253
 - [联合概率、边缘概率、条件概率之间的关系&贝叶斯公式](https://blog.csdn.net/tick_tock97/article/details/79885868)
 
 
+
