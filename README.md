@@ -1,11 +1,10 @@
-## songzhijun.com
+## songzj.com
 
 备用网站地址：https://iszj.github.io
 
 阿酷网址导航：https://www.a.cool/#9
 
 
-这是 我的个人博客网站 hexo 主題 Butterfly 的文件/ Demo 倉庫
 
 使用教程
 
