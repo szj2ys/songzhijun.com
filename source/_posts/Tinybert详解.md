@@ -1,8 +1,8 @@
 ---
 title: TinyBert详解
 tags:
-  - 标签
-keywords: ''
+  - TinyBert
+keywords: 'TinyBert'
 cover: 'https://img2.baidu.com/it/u=507580163,2809643925&fm=253'
 comments: true
 abbrlink: 3197c121
