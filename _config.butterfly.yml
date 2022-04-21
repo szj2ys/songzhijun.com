@@ -237,7 +237,7 @@ post_edit:
   enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url: https://github.com/szj2ys/szj2ys.github.io/edit/main/source/
+  url: https://github.com/szj2ys/szj2ys.github.io/songzhijun.com/master/source/
 
 # Related Articles
 related_post:
@@ -885,7 +885,7 @@ pangu:
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
   enable: true
-  field: site # site/post
+  field: post # site/post
   placeholder: /img/loading.gif
   blur: true
 

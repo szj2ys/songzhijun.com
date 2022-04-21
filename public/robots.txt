@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.songzj.com/sitemap.xml
+Sitemap: https://www.songzj.com/baidusitemap.xml

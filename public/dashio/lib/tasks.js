@@ -1,0 +1,1 @@
+var TaskList={initTaskWidget:function(){$("input.list-child").change((function(){$(this).is(":checked")?$(this).parents("li").addClass("task-done"):$(this).parents("li").removeClass("task-done")}))}};
