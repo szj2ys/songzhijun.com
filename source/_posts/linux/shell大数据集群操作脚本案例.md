@@ -2,11 +2,11 @@
 title: 大数据集群操作脚本案例
 comments: true
 tags:
-  - shell
+  - Shell
   - 脚本
   - 大数据
-categories: shell
-keywords: 'shell,shell脚本,大数据,集群'
+categories: Shell
+keywords: 'Shell,Shell脚本,大数据,集群'
 abbrlink: 7f567768
 date: 2021-08-01 14:32:47
 description: 大数据集群操作脚本案例

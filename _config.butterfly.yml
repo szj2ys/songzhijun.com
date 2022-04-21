@@ -41,11 +41,9 @@ menu:
   导航: /navigate/ || fas fa-location-arrow
   关于我: /about/ || fas fa-user-circle
 
-# Hide the child menu items in mobile sidebar
-hide_sidebar_menu_child: false
-
 # Code Blocks (代码相关)
 # --------------------------------------
+
 highlight_theme: mac # darker / pale night / light / ocean / mac / mac light /false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
@@ -66,7 +64,7 @@ copy:
 #   icon: link || the description
 social:
 #  fas fa-envelope: szj2ys@qq.com || Email
-
+  fas fa-rss: /atom.xml || RSS
 
 # search (搜索)
 # --------------------------------------
@@ -208,9 +206,11 @@ index_post_content:
 
 # toc (目錄)
 toc:
-  enable: true
+  post: true
+  page: false
   number: true
-  style_simple: true
+  expand: true
+  style_simple: false # for post
 
 post_copyright:
   enable: true
@@ -234,10 +234,10 @@ reward:
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: false
+  enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-#  url: https://github.com/szj2ys/szj2ys.github.io/edit/master/source/
+  url: https://github.com/szj2ys/szj2ys.github.io/edit/main/source/
 
 # Related Articles
 related_post:
@@ -253,7 +253,7 @@ photofigcaption: false
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: 2
+post_pagination: 1
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
@@ -301,7 +301,7 @@ comments:
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
-  lazyload: false
+  lazyload: true
   count: true # Display comment count in top_img
   card_post_count: true # Display comment count in Home Page
 
@@ -453,7 +453,7 @@ crisp:
 # --------------------------------------
 footer:
   owner:
-    enable: true
+    enable: false
     since: 2021
   custom_text: <p><a style="margin-inline:5px"target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为 Hexo" alt="HEXO"></a><a style="margin-inline:5px"target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用 Butterfly" alt="Butterfly"></a><a style="margin-inline:5px"target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用 Jsdelivr 为静态资源提供CDN加速" alt="Jsdelivr"></a><a style="margin-inline:5px"target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由 GitHub 托管" alt="GitHub"></a><a style="margin-inline:5px"target="_blank"href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" alt="img" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p>
   copyright: false # Copyright of theme and framework
@@ -504,6 +504,7 @@ ad:
 
 # Verification (站長驗證)
 # --------------------------------------
+
 site_verification:
 #  https://search.google.com/search-console?resource_id=https%3A%2F%2Fwww.songzj.com%2F
   - name: google-site-verification
@@ -534,6 +535,7 @@ site_verification:
 #   toc_color: "#00c4b6"
 #   blockquote_padding_color: "#49b1f5"
 #   blockquote_background_color: "#49b1f5"
+#   scrollbar_color: "#49b1f5"
 
 # The top_img settings of home page
 # default: top img - full screen, site info - middle (默認top_img全屏，site_info在中間)
@@ -543,7 +545,7 @@ index_site_info_top:
 index_top_img_height:
 
 # The user interface setting of category and tag page (category和tag頁的UI設置)
-# index - same as Homepage UI (index 值代表 UI將與首页的UI一樣)
+# index - same as Homepage UI (index 值代表 UI將與首頁的UI一樣)
 # default - same as archives UI 默認跟archives頁面UI一樣
 category_ui: index # 留空或 index
 tag_ui: index # 留空或 index
@@ -692,6 +694,7 @@ preloader: true
 
 # aside (側邊欄)
 # --------------------------------------
+
 aside:
   enable: true
   hide: false
@@ -700,7 +703,7 @@ aside:
   position: right # left or right
   card_author:
     enable: true
-    description: Hello, welcome!
+    description:
     button:
       enable: true
       icon: fab fa-github
@@ -751,12 +754,12 @@ busuanzi:
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: true
+  enable: false
   publish_date: 2021/3/13 00:00:00
 
 # Aside widget - Newest Comments
 newest_comments:
-  enable: true
+  enable: false
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6
   storage: 5 # unit: mins, save data to localStorage
@@ -796,6 +799,14 @@ darkmode:
   # autoChangeMode: false
   autoChangeMode: 1
 
+# Don't modify the following settings unless you know how they work (非必要請不要修改 )
+# Choose: readmode,translate,darkmode,hideAside,toc,chat,comment
+# Don't repeat 不要重複
+rightside_item_order:
+  enable: true
+  hide: readmode,darkmode,hideAside
+  show: toc,translate,chat,comment
+
 # Lightbox (圖片大圖查看模式)
 # --------------------------------------
 # You can only choose one, or neither (只能選擇一個 或者 兩個都不選)
@@ -816,7 +827,9 @@ fancybox: true
 mermaid:
   enable: true
   # built-in themes: default/forest/dark/neutral
-  theme: default
+  theme:
+    light: default
+    dark: dark
 
 # Note (Bootstrap Callout)
 note:
@@ -871,7 +884,7 @@ pangu:
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/vanilla-lazyload
 lazyload:
-  enable: false
+  enable: true
   field: site # site/post
   placeholder: /img/loading.gif
   blur: true
@@ -911,10 +924,9 @@ inject:
 # 非必要請不要修改
 CDN:
   # main
-  main_css: /css/index.css
-  jquery: https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js
-  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.3/source/js/main.min.js # /js/main.js
-  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.3/source/js/utils.min.js # /js/utils.js
+  main_css:
+  main: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.1.0/source/js/main.min.js # /js/main.js
+  utils: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.1.0/source/js/utils.min.js # /js/utils.js
 
   # pjax
   pjax: https://cdn.jsdelivr.net/npm/pjax/pjax.min.js
@@ -936,10 +948,10 @@ CDN:
   sharejs_css: https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css
 
   # search
-  local_search: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.3/source/js/search/local-search.min.js # /js/search/local-search.js
-  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@3.8.3/source/js/search/algolia.min.js # /js/search/algolia.js
-  algolia_search: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js
-  algolia_search_css: https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css
+  local_search: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.1.0/source/js/search/local-search.min.js # /js/search/local-search.js
+  algolia_js: https://cdn.jsdelivr.net/npm/hexo-theme-butterfly@4.1.0/source/js/search/algolia.min.js # /js/search/algolia.js
+  algolia_search_v4:
+  instantsearch_v4:
 
   # math
   mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -949,7 +961,7 @@ CDN:
   mermaid: https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js
 
   # count
-  busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+  busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
   # background effect
   canvas_ribbon: https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js

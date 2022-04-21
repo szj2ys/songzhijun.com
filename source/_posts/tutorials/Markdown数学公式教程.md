@@ -1,5 +1,5 @@
 ---
-title: Markdown数学公式教程
+title: Markdown数学公式语法
 tags:
   - Markdown
   - 教程

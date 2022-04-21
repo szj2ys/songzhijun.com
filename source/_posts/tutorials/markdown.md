@@ -1,9 +1,8 @@
 ---
-title: Markdown 教程
+title: Markdown教程
 tags:
   - Markdown
   - 教程
-  - 语法
 categories:
   - Markdown教程
 

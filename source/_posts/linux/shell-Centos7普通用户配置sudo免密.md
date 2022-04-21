@@ -1,5 +1,5 @@
 ---
-title: Centos7普通用户配置sudo免密
+title: Centos普通用户配置免密登陆
 comments: true
 tags:
   - shell

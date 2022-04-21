@@ -1,11 +1,11 @@
 ---
-title: shell单引号和双引号区别
+title: Shell单引号和双引号区别
 comments: true
 tags:
-  - shell
+  - Shell
   - 教程
-categories: shell
-keywords: 'shell,教程'
+categories: Shell
+keywords: 'Shell,教程'
 abbrlink: c7921ac5
 date: 2021-08-01 14:47:26
 description:

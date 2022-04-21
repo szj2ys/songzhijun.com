@@ -1,5 +1,5 @@
 ---
-title: wget命令用法总结
+title: wget命令高级用法总结
 comments: true
 tags:
   - shell 命令
