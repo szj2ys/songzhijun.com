@@ -5,6 +5,8 @@
 - https://tridiamond.tech
 - https://xpoet.cn
 
+## Free and beautiful themes
+- https://themewagon.com
 
 
 

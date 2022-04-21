@@ -53,6 +53,11 @@ skip_render:
   - dashio/***
   - dashio/****
   - dashio/*****
+  - quixlab/*
+  - quixlab/**
+  - quixlab/***
+  - quixlab/****
+  - quixlab/*****
   - boxify/*
   - boxify/**
   - boxify/***
