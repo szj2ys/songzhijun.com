@@ -236,8 +236,7 @@ reward:
 post_edit:
   enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
-  # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url: https://github.com/szj2ys/szj2ys.github.io/songzhijun.com/master/source/
+  url: https://github.com/szj2ys/songzhijun.com/edit/master/source/
 
 # Related Articles
 related_post:
