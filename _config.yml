@@ -141,6 +141,7 @@ deploy:
   repo:
     - https://github.com/szj2ys/szj2ys.github.io.git
     - git@iszj.github.com:iszj/iszj.github.io.git
+    - git@github.com:szj2ys/songzj.com.git
 
   branch: master
   # other deployer
