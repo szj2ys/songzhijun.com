@@ -280,4 +280,4 @@ Transformer 训练过程与 seq2seq 类似，首先 Encoder 端得到输入的 e
 - [Hugging Face的BERT源码框架图文详解](https://zhuanlan.zhihu.com/p/189717114)
 - [关于Transformer，面试官们都怎么问](https://mp.weixin.qq.com/s?__biz=MjM5ODkzMzMwMQ==&mid=2650412561&idx=2&sn=ef7a88ca7acfb4d666d51f1c0a7cdb7f&chksm=becd904b89ba195d9c07e5aca6fcf483cce3aee0378049d4abb977d5ce2a98095efc963151a2&mpshare=1&scene=1&srcid=0209JnIuxMtyP2L5PZN3HEfw&sharer_sharetime=1644408100818&sharer_shareid=e3facbe5e17968b425891a08c9231ad1#rd)
 - [图解Transformer（完整版）](https://blog.csdn.net/longxinchen_ml/article/details/86533005)
-
+- [全面解读Word2Vec、Transformer和BERT](https://zhuanlan.zhihu.com/p/96778666)

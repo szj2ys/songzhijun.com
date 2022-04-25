@@ -13,6 +13,7 @@ description:
 cover: https://img1.baidu.com/it/u=137246240,1680214152&fm=253
 sticky: 100
 ---
+![](media/16508726257192.jpg)
 
 
 ## Bert含义
@@ -214,6 +215,6 @@ Multi-head Self-Attention:为了增强Attention的多样性，文章作者进一
 - [彻底理解 Google BERT 模型](https://baijiahao.baidu.com/s?id=1651912822853865814&wfr=spider&for=pc)
 - [BERT模型详解](http://fancyerii.github.io/2019/03/09/bert-theory/)
 - [图解BERT模型：从零开始构建BERT](https://cloud.tencent.com/developer/article/1389555)
-
+- [全面解读Word2Vec、Transformer和BERT](https://zhuanlan.zhihu.com/p/96778666)
 
 
