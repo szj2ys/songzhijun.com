@@ -10,7 +10,7 @@ updated: 2022-04-24 11:33:44
 categories:
 description:
 top_img:
-cover:
+cover: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_-RERdPyRF1BfUce1mm9UploZ4Yn-kZZkjw&usqp=CAU
 ---
 
 在进程、线程和协程的使用上，初学者之所以感到困惑，最主要的原因是对任务的理解不到位。任务是由一个进程、或者线程、或者协程独立完成的、相对独立的一系列工作组合。通常，我们会把任务写成一个函数。任务有3种类型：

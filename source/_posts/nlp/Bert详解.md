@@ -13,14 +13,12 @@ description:
 cover: https://img1.baidu.com/it/u=137246240,1680214152&fm=253
 sticky: 100
 ---
-![](media/16508726257192.jpg)
 
 
 ## Bert含义
 BERT模型的全称是：BidirectionalEncoder Representations from Transformer。双向Transformer编码表达，其中双向指的是attention矩阵中，每个字都包含前后所有字的信息。
 
 BERT模型的目标是利用大规模无标注语料训练、获得文本的包含丰富语义信息的Representation，即：文本的语义表示，然后将文本的语义表示在特定NLP任务中作微调，最终应用于该NLP任务。
-
 
 ## 模型结构
 Bert依然是依赖Transformer模型结构，我们知道GPT采用的是Transformer中的Decoder部分的模型结构，当前位置只能attend到之前的位置。而Bert中则没有这样的限制，因此它是用的Transformer的Encoder部分。
@@ -189,7 +187,27 @@ Multi-head Self-Attention:为了增强Attention的多样性，文章作者进一
 
 
 
+## 预训练模型相对传统模型做的革新
 
+### 通用的特征提取器
+
+早期NLP模型设计的一个重要步骤，就是考虑如何提取语料特征。这个环节会占用算法工程师大量的精力，也是影响模型效果的关键因素。
+
+在预训练模型中，我们只需要简单粗暴地使用transformer，不需要太多地关注具体任务，就能够达到SOTA级的特征提取器的效果。
+
+除此之外，transformer的设计思想由于其通用性，还可以拓展应用到其它领域，例如CV领域。
+
+### 动态化的词向量
+
+在词向量方法刚出现的时候，例如NNLM，word2vec，Glove模型，他们针对每个特定字词所生成的词向量是一成不变的。对于存在一词多义现象的字词，这种静态的词向量很难在所有的场景下，都准确完整地表示出字词的信息。
+
+所以，我们需要一种能够根据上下文语境进行动态调整，准确表示字词意思的词向量。预训练模型借助attention机制，就能够动态生成这种基于上下文的词向量。
+
+### 针对不同下游任务的强泛化性
+
+传统的构建模型的思路，就是根据任务的具体类型，选择相应的模型。这样因地制宜、对症下药是没有问题的，但是我们要考虑到，在工业界工程落地，存在着各种各样的特殊情况和限制条件，比如说训练语料不足、算法工程师水平不够。
+
+所以我们有时候需要一个“傻瓜式”的即插即用的模型，不需要太多的训练工作、不需要太多的调参工作、不需要太多的模型选型和优化工作。预训练模型就是这样一个强泛化性的模型，它只需要少量的训练数据和模型优化工作，就能够在新的下游任务中获得不错的效果，有时候甚至不需要训练和优化就能够直接拿来使用。
 
 
 
@@ -216,5 +234,7 @@ Multi-head Self-Attention:为了增强Attention的多样性，文章作者进一
 - [BERT模型详解](http://fancyerii.github.io/2019/03/09/bert-theory/)
 - [图解BERT模型：从零开始构建BERT](https://cloud.tencent.com/developer/article/1389555)
 - [全面解读Word2Vec、Transformer和BERT](https://zhuanlan.zhihu.com/p/96778666)
+- [万字长文带你纵览 BERT 家族](https://zhuanlan.zhihu.com/p/145119424)
+- [12个NLP预训练模型学习笔记](https://zhuanlan.zhihu.com/p/112889995)
 
 

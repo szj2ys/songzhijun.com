@@ -13,6 +13,24 @@ top_img:
 cover: https://img1.baidu.com/it/u=575716171,2335032045&fm=253
 ---
 
+大家都知道，LSTM已经可以胜任序列标注问题了，为每个token预测一个label（LSTM后面接:分类器）；而CRF也是一样的，为每个token预测一个label。但是，他们的预测机理是不同的。CRF是全局范围内统计归一化的条件状态转移概率矩阵，再预测出一条指定的sample的每个token的label；LSTM（RNNs，不区分here）是依靠神经网络的超强非线性拟合能力，在训练时将samples通过复杂到让你窒息的高阶高纬度异度空间的非线性变换，学习出一个模型，然后再预测出一条指定的sample的每个token的label。
+作者：知乎用户
+链接：https://www.zhihu.com/question/35866596/answer/236886066
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+既然LSTM都OK了，为啥researchers搞一个LSTM+CRF的hybrid model? 哈哈，因为a single LSTM预测出来的标注有问题啊！举个segmentation例子(BES; char level)，plain LSTM 会搞出这样的结果：
+```shell
+input: "学习出一个模型，然后再预测出一条指定"
+expected output: 学/B 习/E 出/S 一/B 个/E 模/B 型/E ，/S 然/B 后/E 再/E 预/B 测/E ……
+real output: 学/B 习/E 出/S 一/B 个/B 模/B 型/E ，/S 然/B 后/B 再/E 预/B 测/E ……
+```
+看到不，用LSTM，整体的预测accuracy是不错indeed, 但是会出现上述的错误：在B之后再来一个B。这个错误在CRF中是不存在的，因为CRF的特征函数的存在就是为了对given序列观察学习各种特征（n-gram，窗口），这些特征就是在限定窗口size下的各种词之间的关系。然后一般都会学到这样的一条规律（特征）：B后面接E，不会出现E。这个限定特征会使得CRF的预测结果不出现上述例子的错误。当然了，CRF还能学到更多的限定特征，那越多越好啊！
+好了，那就把CRF接到LSTM上面，把LSTM在timestep上把每一个hiddenstate的tensor输入给CRF，让LSTM负责在CRF的特征限定下，依照新的loss function，学习出一套新的非线性变换空间。最后，不用说，结果还真是好多了呢。
+
+
+
+
 
 LSTM的优点是能够通过双向的设置学习到观测序列（输入的字）之间的依赖，在训练过程中，LSTM能够根据目标（比如识别实体）自动提取观测序列的特征，但是缺点是无法学习到状态序列（输出的标注）之间的关系，要知道，在命名实体识别任务中，标注之间是有一定的关系的，比如B类标注（表示某实体的开头）后面不会再接一个B类标注，所以LSTM在解决NER这类序列标注任务时，虽然可以省去很繁杂的特征工程，但是也存在无法学习到标注上下文的缺点。相反，CRF的优点就是能对隐含状态建模，学习状态序列的特点，但它的缺点是需要手动提取序列特征。所以一般的做法是，在LSTM后面再加一层CRF，以获得两者的优点。
 
@@ -79,6 +97,14 @@ For sequence labeling (or general structured prediction) tasks, it is beneficial
 - [实体识别：CRF及LSTM+CRF](https://blog.csdn.net/weixin_42486623/article/details/118164370?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0.pc_relevant_default&spm=1001.2101.3001.4242.1&utm_relevant_index=3)
 - [LSTM+CRF中LSTM和CRF各有什么作用](https://blog.csdn.net/zkq_1986/article/details/108291835)
 - [如何理解LSTM后接CRF](https://www.zhihu.com/question/62399257)
+- [信息抽取(Information Extraction:NER(命名实体识别),关系抽取)](https://zhuanlan.zhihu.com/p/67613067)
+
+
+
+
+
+
+
 
 
 

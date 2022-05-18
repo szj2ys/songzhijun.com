@@ -166,7 +166,7 @@ LSTM 的反向传播训练算法
 - [easyai：循环神经网络 – Recurrent Neural Network | RNN](https://easyai.tech/ai-definition/rnn/)
 - [RNN/LSTM/GRU 详解+tensorflow使用](https://zhuanlan.zhihu.com/p/103182683)
 - [LSTM架构详解](https://zhuanlan.zhihu.com/p/337700483)
-
+- [详细解读LSTM与GRU单元的各个公式和区别](https://zhuanlan.zhihu.com/p/156812767)
 
 
 
